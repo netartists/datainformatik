@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = array (
-  'title' => 'Data Informatik bootstrap template extender',
-  'description' => 'Extends bootstrap template',
+  'title' => 'Data Informatik bootstrap package extender',
+  'description' => 'Extends bootstrap package extender for version 7.0.2',
   'category' => 'distribution',
   'version' => '1.0.0',
   'state' => 'stable',

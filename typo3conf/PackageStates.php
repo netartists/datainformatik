@@ -258,6 +258,12 @@ return [
             'packagePath' => 'typo3conf/ext/introduction/',
             'suggestions' => [],
         ],
+        'adx_less' => [
+            'composerName' => 'adx_less',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/adx_less/',
+            'suggestions' => [],
+        ],
         'adodb' => [
             'composerName' => 'typo3/cms-adodb',
             'state' => 'inactive',

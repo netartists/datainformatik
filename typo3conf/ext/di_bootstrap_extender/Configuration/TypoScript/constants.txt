@@ -1,14 +1,3 @@
-plugin.di_bootstrap_extender {
-	view {
-		 # cat=plugin.di_bootstrap_extender/file; type=string; label=Path to template root (FE)
-		templateRootPath = EXT:di_bootstrap_extender/Resources/Private/Templates/
-
-		 # cat=plugin.di_bootstrap_extender/file; type=string; label=Path to template partials (FE)
-		partialRootPath = EXT:di_bootstrap_extender/Resources/Private/Partials/
-
-		 # cat=plugin.di_bootstrap_extender/file; type=string; label=Path to template layouts (FE)
-		layoutRootPath = EXT:di_bootstrap_extender/Resources/Private/Layouts/Page
-	}
-}
-
 page.fluidtemplate.layoutRootPath = EXT:di_bootstrap_extender/Resources/Private/Layouts/Page
+page.fluidtemplate.partialRootPath = EXT:di_bootstrap_extender/Resources/Private/Partials/Page
+page.fluidtemplate.templateRootPath = EXT:di_bootstrap_extender/Resources/Private/Templates/Page

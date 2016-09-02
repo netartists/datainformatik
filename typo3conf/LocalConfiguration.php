@@ -16,6 +16,7 @@ return [
     ],
     'EXT' => [
         'extConf' => [
+            'adx_less' => 'a:0:{}',
             'bootstrap_package' => 'a:9:{s:21:"disableLessProcessing";s:1:"0";s:36:"disablePageTsNewContentElementWizard";s:1:"0";s:30:"disablePageTsTtContentPreviews";s:1:"0";s:16:"disablePageTsRTE";s:1:"0";s:20:"disablePageTsTCEFORM";s:1:"0";s:20:"disablePageTsTCEMAIN";s:1:"0";s:21:"disablePageTsAdmPanel";s:1:"0";s:27:"disablePageTsBackendLayouts";s:1:"0";s:4:"Logo";s:84:"../typo3conf/ext/bootstrap_package/Resources/Public/Images/Backend/TopBarLogo@2x.png";}',
             'di_bootstrap_extender' => 'a:0:{}',
             'introduction' => 'a:0:{}',

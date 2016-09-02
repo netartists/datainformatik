@@ -8,3 +8,4 @@ typo3/*
 .idea/workspace.xml
 fileadmin/_processed_/*
 typo3temp/*
+typo3conf/ext/bootstrap_package_overrides-master/*
