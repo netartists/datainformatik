@@ -246,6 +246,12 @@ return [
             'packagePath' => 'typo3conf/ext/bootstrap_package/',
             'suggestions' => [],
         ],
+        'di_bootstrap_extender' => [
+            'composerName' => 'di_bootstrap_extender',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/di_bootstrap_extender/',
+            'suggestions' => [],
+        ],
         'introduction' => [
             'composerName' => 'introduction',
             'state' => 'active',

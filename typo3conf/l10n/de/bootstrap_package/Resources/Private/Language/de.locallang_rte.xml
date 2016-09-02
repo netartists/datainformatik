@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+
+            <label index="class.text-left"/>
+            <label index="class.text-right"/>
+            <label index="class.text-center"/>
+            <label index="class.text-justify"/>
+
+            <label index="class.lead"/>
+
+            <label index="class.active"/>
+            <label index="class.danger"/>
+            <label index="class.info"/>
+            <label index="class.success"/>
+            <label index="class.warning"/>
+
+            <label index="class.visible-lg"/>
+            <label index="class.visible-md"/>
+            <label index="class.visible-print"/>
+            <label index="class.visible-sm"/>
+            <label index="class.visible-xs"/>
+
+            <label index="class.table-striped"/>
+            <label index="class.table-bordered"/>
+            <label index="class.table-hover"/>
+            <label index="class.table-condensed"/>
+
+            <label index="class.list-unstyled"/>
+            <label index="class.list-inline"/>
+
+            <label index="class.btn"/>
+            <label index="class.btn-default"/>
+            <label index="class.btn-primary"/>
+            <label index="class.btn-success"/>
+            <label index="class.btn-warning"/>
+            <label index="class.btn-danger"/>
+            <label index="class.btn-link"/>
+            <label index="class.btn-block"/>
+
+        </languageKey>
+  </data>
+</T3locallangExt>

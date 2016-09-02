@@ -1,0 +1,10 @@
+
+
+#page.10.layoutRootPaths.0 = {$plugin.di_bootstrap_extender.view.layoutRootPath}
+#page.10.layoutRootPaths.1 = {$plugin.di_bootstrap_extender.view.layoutRootPath}
+#page.10.layoutRootPaths.2 = {$plugin.di_bootstrap_extender.view.layoutRootPath}
+
+#page.10.partialRootPaths.0 = {$plugin.di_bootstrap_extender.view.partialRootPath}
+#page.10.partialRootPaths.1 = {$plugin.di_bootstrap_extender.view.partialRootPath}
+#page.10.templateRootPaths.0 = {$plugin.di_bootstrap_extender.view.templateRootPath}
+#page.10.templateRootPaths.1 = {$plugin.di_bootstrap_extender.view.templateRootPath}

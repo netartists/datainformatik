@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z" product-name="bootstrap_package" target-language="de">
+        <header/>
+        <body>
+
+            <trans-unit id="skiptomaincontent">
+                <source>Skip to main content</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Zum Hauptinhalt springen</target></alt-trans></trans-unit>
+
+            <trans-unit id="previous">
+                <source>Previous</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Zurück</target></alt-trans></trans-unit>
+
+            <trans-unit id="next">
+                <source>Next</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Weiter</target></alt-trans></trans-unit>
+
+            <trans-unit id="externalmediaunsupported">
+                <source>The external media source %s is not supported. Please provide a valid YouTube or Vimeo URL.</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Die angegebene Quelle für externe Medien wird leider nicht unterstützt. Bitte nur URLs von Youtube  oder Vimeo eingeben.</target></alt-trans></trans-unit>
+
+        </body>
+    </file>
+</xliff>

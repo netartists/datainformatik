@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+
+            <label index="theme_name">Bootstrap</label>
+
+            <label index="backend_layout.default">Standard</label>
+            <label index="backend_layout.default_clean">Standard, Leer</label>
+            <label index="backend_layout.default_2_columns">Standard, 2 Spalten</label>
+            <label index="backend_layout.default_2_columns_25_75">Standard, 2 Spalten 25/75</label>
+            <label index="backend_layout.default_2_columns_50_50">Standard, 2 Spalten 50/50</label>
+            <label index="backend_layout.default_2_columns_offset_right">Standard, 2 Spalten, Abstand rechts</label>
+
+            <label index="backend_layout.default_3_columns">Standard, 3 Spalten</label>
+            <label index="backend_layout.default_subnavigation_right">Standard, Subnavigation rechts</label>
+            <label index="backend_layout.default_subnavigation_right_2_columns">Standard, Subnavigation rechts und 2 Spalten</label>
+            <label index="backend_layout.default_subnavigation_left">Standard, Subnavigation links</label>
+            <label index="backend_layout.default_subnavigation_left_2_columns">Standard, Subnavigation links und 2 Spalten</label>
+            <label index="backend_layout.special_start">Spezial Startseite</label>
+            <label index="backend_layout.special_feature">Spezial Funktionen</label>
+
+            <label index="backend_layout.column.subnav"/>
+
+            <label index="backend_layout.column.left">Links</label>
+            <label index="backend_layout.column.normal">Normal</label>
+            <label index="backend_layout.column.right">Rechts</label>
+            <label index="backend_layout.column.border">Rand</label>
+
+            <label index="backend_layout.column.middle1">Mittig: Links</label>
+            <label index="backend_layout.column.middle2">Mittig: Zentriert</label>
+            <label index="backend_layout.column.middle3">Mittig: Rechts</label>
+
+            <label index="backend_layout.column.main2">Normal 2</label>
+
+            <label index="backend_layout.column.special1">Spezial 1</label>
+            <label index="backend_layout.column.special2">Spezial 2</label>
+            <label index="backend_layout.column.special3">Spezial 3</label>
+            <label index="backend_layout.column.special4">Spezial 4</label>
+            <label index="backend_layout.column.special5">Spezial 5</label>
+            <label index="backend_layout.column.special6">Spezial 6</label>
+            <label index="backend_layout.column.special7">Spezial 7</label>
+            <label index="backend_layout.column.special8">Spezial 8</label>
+            <label index="backend_layout.column.special9">Spezial 9</label>
+            <label index="backend_layout.column.special10">Spezial 10</label>
+
+            <label index="backend_layout.column.footer1">Fußzeile: Links</label>
+            <label index="backend_layout.column.footer2">Fußzeile: Mitte</label>
+            <label index="backend_layout.column.footer3">Fußzeile: Rechts</label>
+
+            <label index="content_element.panel"/>
+            <label index="content_element.panel.description"/>
+
+            <label index="content_element.carousel">Karussell</label>
+            <label index="content_element.carousel.description"/>
+
+            <label index="content_element.texticon">Text und Icon</label>
+            <label index="content_element.texticon.description"/>
+
+            <label index="content_element.accordion">Akkordeon</label>
+            <label index="content_element.accordion.description"/>
+
+            <label index="content_element.tab"/>
+            <label index="content_element.tab.description"/>
+
+            <label index="content_element.listgroup"/>
+            <label index="content_element.listgroup.description"/>
+
+            <label index="content_element.external_media"/>
+            <label index="content_element.external_media.description"/>
+
+            <label index="carousel.options">Karussell Optionen</label>
+            <label index="carousel.interval">Intervall in ms</label>
+            <label index="carousel.background_image_maxwidth"/>
+            <label index="carousel.wrap"/>
+            <label index="carousel.wrap.description"/>
+
+            <label index="carousel_item"/>
+            <label index="carousel_item.tt_content">Karussell</label>
+            <label index="carousel_item.link"/>
+            <label index="carousel_item.header"/>
+            <label index="carousel_item.header_layout"/>
+            <label index="carousel_item.bodytext">Text</label>
+            <label index="carousel_item.text_color">Textfarbe</label>
+            <label index="carousel_item.image">Bild</label>
+            <label index="carousel_item.background_image">Hintergrundbild</label>
+            <label index="carousel_item.background_color">Hintergrundfarbe</label>
+
+            <label index="carousel_item.item_type.header"/>
+            <label index="carousel_item.item_type.textandimage">Text und Bild</label>
+            <label index="carousel_item.item_type.backgroundimage">Hintergrundbild</label>
+            <label index="carousel_item.item_type.html"/>
+
+            <label index="accordion_item"/>
+            <label index="accordion_item.tt_content">Akkordeon</label>
+            <label index="accordion_item.header"/>
+            <label index="accordion_item.bodytext">Text</label>
+
+            <label index="tab.options"/>
+            <label index="tab.default_tab"/>
+
+
+            <label index="tab_item"/>
+            <label index="tab_item.tt_content"/>
+            <label index="tab_item.active"/>
+            <label index="tab_item.header"/>
+            <label index="tab_item.bodytext">Text</label>
+
+            <label index="contextualalternatives.default">Standard</label>
+            <label index="contextualalternatives.primary"/>
+            <label index="contextualalternatives.success"/>
+            <label index="contextualalternatives.info"/>
+            <label index="contextualalternatives.warning"/>
+            <label index="contextualalternatives.danger"/>
+
+            <label index="external_media"/>
+            <label index="field.external_media_source"/>
+            <label index="field.external_media_ratio"/>
+
+            <label index="field.icon"/>
+            <label index="field.icon_position"/>
+            <label index="field.icon_type"/>
+            <label index="field.icon_size"/>
+            <label index="field.icon_background"/>
+            <label index="field.icon_color"/>
+            <label index="field.icon_background"/>
+
+            <label index="option.none"/>
+            <label index="option.left">Links</label>
+            <label index="option.top"/>
+            <label index="option.right">Rechts</label>
+            <label index="option.bottom"/>
+            <label index="option.default">Standard</label>
+            <label index="option.square"/>
+            <label index="option.circle"/>
+            <label index="option.medium"/>
+            <label index="option.large"/>
+            <label index="option.awesome"/>
+
+            <label index="tablelayout.default">Standard</label>
+            <label index="tablelayout.basic"/>
+            <label index="tablelayout.striped"/>
+            <label index="tablelayout.bordered"/>
+            <label index="tablelayout.hover"/>
+            <label index="tablelayout.condensed"/>
+
+            <label index="listlayout.unordered"/>
+            <label index="listlayout.ordered"/>
+            <label index="listlayout.unstyled"/>
+            <label index="listlayout.inline"/>
+
+            <label index="uploadslayout.default">Standard</label>
+            <label index="uploadslayout.icons"/>
+            <label index="uploadslayout.iconsandpreview"/>
+
+            <label index="carousellayout.default">Standard</label>
+            <label index="carousellayout.small"/>
+
+            <label index="tabs.background"/>
+            <label index="colorpicker"/>
+
+            <label index="advanced"/>
+            <label index="settings"/>
+
+        </languageKey>
+  </data>
+</T3locallangExt>

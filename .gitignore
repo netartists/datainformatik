@@ -1,1 +1,10 @@
 typo3/*
+.idea/copyright/profiles_settings.xml
+.idea/deployment.xml
+.idea/htdocs.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+fileadmin/_processed_/*
+typo3temp/*

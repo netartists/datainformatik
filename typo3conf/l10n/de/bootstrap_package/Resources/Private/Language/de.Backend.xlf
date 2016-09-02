@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z" product-name="bootstrap_package" target-language="de">
+        <header/>
+        <body>
+
+            <trans-unit id="theme_name" approved="no">
+                <source>Bootstrap</source>
+            <target state="needs-translation">Bootstrap</target><alt-trans xml:space="preserve" origin="zerlono"><target>Bootstrap Package</target></alt-trans></trans-unit>
+
+            <trans-unit id="backend_layout.default" approved="yes">
+                <source>Default</source>
+            <target state="translated">Standard</target></trans-unit>
+            <trans-unit id="backend_layout.default_clean" approved="yes">
+                <source>Default, Clean</source>
+            <target state="translated">Standard, Leer</target></trans-unit>
+            <trans-unit id="backend_layout.default_2_columns" approved="yes">
+                <source>Default, 2 Columns</source>
+            <target state="translated">Standard, 2 Spalten</target></trans-unit>
+            <trans-unit id="backend_layout.default_2_columns_25_75" approved="yes">
+                <source>Default, 2 Columns 25/75</source>
+            <target state="translated">Standard, 2 Spalten 25/75</target></trans-unit>
+            <trans-unit id="backend_layout.default_2_columns_50_50" approved="yes">
+                <source>Default, 2 Columns 50/50</source>
+            <target state="translated">Standard, 2 Spalten 50/50</target></trans-unit>
+            <trans-unit id="backend_layout.default_2_columns_offset_right" approved="yes">
+                <source>Default, 2 Columns, Offset Right</source>
+            <target state="translated">Standard, 2 Spalten, Abstand rechts</target></trans-unit>
+
+            <trans-unit id="backend_layout.default_3_columns" approved="yes">
+                <source>Default, 3 Columns</source>
+            <target state="translated">Standard, 3 Spalten</target></trans-unit>
+            <trans-unit id="backend_layout.default_subnavigation_right" approved="yes">
+                <source>Default, Subnavigation Right</source>
+            <target state="translated">Standard, Subnavigation rechts</target><alt-trans xml:space="preserve" origin="zerlono"><target>Standard, Untermenü rechts</target></alt-trans></trans-unit>
+            <trans-unit id="backend_layout.default_subnavigation_right_2_columns" approved="yes">
+                <source>Default, Subnavigation Right and 2 Columns</source>
+            <target state="translated">Standard, Subnavigation rechts und 2 Spalten</target><alt-trans xml:space="preserve" origin="zerlono"><target>Standard, Untermenü rechts und 2 Spalten</target></alt-trans></trans-unit>
+            <trans-unit id="backend_layout.default_subnavigation_left" approved="yes">
+                <source>Default, Subnavigation Left</source>
+            <target state="translated">Standard, Subnavigation links</target><alt-trans xml:space="preserve" origin="zerlono"><target>Standard, Untermenü links</target></alt-trans></trans-unit>
+            <trans-unit id="backend_layout.default_subnavigation_left_2_columns" approved="yes">
+                <source>Default, Subnavigation Left and 2 Columns</source>
+            <target state="translated">Standard, Subnavigation links und 2 Spalten</target><alt-trans xml:space="preserve" origin="zerlono"><target>Standard, Untermenü links und 2 Spalten</target></alt-trans></trans-unit>
+            <trans-unit id="backend_layout.special_start" approved="yes">
+                <source>Special Startpage</source>
+            <target state="translated">Spezial Startseite</target></trans-unit>
+            <trans-unit id="backend_layout.special_feature" approved="yes">
+                <source>Special Feature</source>
+            <target state="translated">Spezial Funktionen</target></trans-unit>
+
+            <trans-unit id="backend_layout.column.subnav">
+                <source>Sub Navigation (NOEDIT)</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Untermenü (keine Bearbeitung)</target></alt-trans></trans-unit>
+
+            <trans-unit id="backend_layout.column.left" approved="yes">
+                <source>Left</source>
+            <target state="translated">Links</target></trans-unit>
+            <trans-unit id="backend_layout.column.normal" approved="yes">
+                <source>Normal</source>
+            <target state="translated">Normal</target></trans-unit>
+            <trans-unit id="backend_layout.column.right" approved="yes">
+                <source>Right</source>
+            <target state="translated">Rechts</target></trans-unit>
+            <trans-unit id="backend_layout.column.border" approved="yes">
+                <source>Border</source>
+            <target state="translated">Rand</target></trans-unit>
+
+            <trans-unit id="backend_layout.column.middle1" approved="yes">
+                <source>Middle: Left</source>
+            <target state="translated">Mittig: Links</target><alt-trans xml:space="preserve" origin="zerlono"><target>Mitte: Links</target></alt-trans></trans-unit>
+            <trans-unit id="backend_layout.column.middle2" approved="yes">
+                <source>Middle: Center</source>
+            <target state="translated">Mittig: Zentriert</target><alt-trans xml:space="preserve" origin="zerlono"><target>Mitte: Zentriert</target></alt-trans></trans-unit>
+            <trans-unit id="backend_layout.column.middle3" approved="yes">
+                <source>Middle: Right</source>
+            <target state="translated">Mittig: Rechts</target><alt-trans xml:space="preserve" origin="zerlono"><target>Mitte: Rechts</target></alt-trans></trans-unit>
+
+            <trans-unit id="backend_layout.column.main2" approved="yes">
+                <source>Normal 2</source>
+            <target state="translated">Normal 2</target></trans-unit>
+
+            <trans-unit id="backend_layout.column.special1" approved="yes">
+                <source>Special 1</source>
+            <target state="translated">Spezial 1</target></trans-unit>
+            <trans-unit id="backend_layout.column.special2" approved="yes">
+                <source>Special 2</source>
+            <target state="translated">Spezial 2</target></trans-unit>
+            <trans-unit id="backend_layout.column.special3" approved="yes">
+                <source>Special 3</source>
+            <target state="translated">Spezial 3</target></trans-unit>
+            <trans-unit id="backend_layout.column.special4" approved="yes">
+                <source>Special 4</source>
+            <target state="translated">Spezial 4</target></trans-unit>
+            <trans-unit id="backend_layout.column.special5" approved="yes">
+                <source>Special 5</source>
+            <target state="translated">Spezial 5</target></trans-unit>
+            <trans-unit id="backend_layout.column.special6" approved="yes">
+                <source>Special 6</source>
+            <target state="translated">Spezial 6</target></trans-unit>
+            <trans-unit id="backend_layout.column.special7" approved="yes">
+                <source>Special 7</source>
+            <target state="translated">Spezial 7</target></trans-unit>
+            <trans-unit id="backend_layout.column.special8" approved="yes">
+                <source>Special 8</source>
+            <target state="translated">Spezial 8</target></trans-unit>
+            <trans-unit id="backend_layout.column.special9" approved="yes">
+                <source>Special 9</source>
+            <target state="translated">Spezial 9</target></trans-unit>
+            <trans-unit id="backend_layout.column.special10" approved="yes">
+                <source>Special 10</source>
+            <target state="translated">Spezial 10</target></trans-unit>
+
+            <trans-unit id="backend_layout.column.footer1" approved="yes">
+                <source>Footer: Left</source>
+            <target state="translated">Fußzeile: Links</target></trans-unit>
+            <trans-unit id="backend_layout.column.footer2" approved="yes">
+                <source>Footer: Center</source>
+            <target state="translated">Fußzeile: Mitte</target></trans-unit>
+            <trans-unit id="backend_layout.column.footer3" approved="yes">
+                <source>Footer: Right</source>
+            <target state="translated">Fußzeile: Rechts</target></trans-unit>
+
+            <trans-unit id="content_element.panel">
+                <source>Panel</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Panel</target></alt-trans></trans-unit>
+            <trans-unit id="content_element.panel.description">
+                <source>Insert Panelelement with simple text</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Panelelement mit einfachem Text einfügen</target></alt-trans></trans-unit>
+
+            <trans-unit id="content_element.carousel" approved="yes">
+                <source>Carousel</source>
+            <target state="translated">Karussell</target></trans-unit>
+            <trans-unit id="content_element.carousel.description">
+                <source>Insert Carouselelement with different contents (header / text with image / pure HTML)</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Karusellelement mit verschiedenem Inhalt einfügen (Titel, Text mit Bild, reines  HTML)</target></alt-trans></trans-unit>
+
+            <trans-unit id="content_element.texticon" approved="yes">
+                <source>Text and Icon</source>
+            <target state="translated">Text und Icon</target></trans-unit>
+            <trans-unit id="content_element.texticon.description">
+                <source>Insert Bootstrap Icon with Text</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Bootstrapicon mit Text einfügen</target></alt-trans></trans-unit>
+
+            <trans-unit id="content_element.accordion" approved="yes">
+                <source>Accordion</source>
+            <target state="translated">Akkordeon</target></trans-unit>
+            <trans-unit id="content_element.accordion.description">
+                <source>Insert several Accordionelement(s) with headline and text</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Mehrere Akkordeonelemente mit Überschrift und Text einfügen</target></alt-trans></trans-unit>
+
+            <trans-unit id="content_element.tab">
+                <source>Tab</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Tab</target></alt-trans></trans-unit>
+            <trans-unit id="content_element.tab.description">
+                <source>Insert several Tabelement(s) with headline and text</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Mehrere Tabelemente mit Überschrift und Text einfügen</target></alt-trans></trans-unit>
+
+            <trans-unit id="content_element.listgroup">
+                <source>List Group</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Liste</target></alt-trans></trans-unit>
+            <trans-unit id="content_element.listgroup.description">
+                <source>Insert simple Listgroupelement</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Einfaches Listenelement einfügen</target></alt-trans></trans-unit>
+
+            <trans-unit id="content_element.external_media">
+                <source>External Media</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Externe Medien</target></alt-trans></trans-unit>
+            <trans-unit id="content_element.external_media.description">
+                <source>Insert external media from YouTube or Vimeo</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Externe Medien von Youtube oder Vimeo einfügen</target></alt-trans></trans-unit>
+
+            <trans-unit id="carousel.options" approved="yes">
+                <source>Carousel Options</source>
+            <target state="translated">Karussell Optionen</target></trans-unit>
+            <trans-unit id="carousel.interval" approved="yes">
+                <source>Interval in ms</source>
+            <target state="translated">Intervall in ms</target></trans-unit>
+            <trans-unit id="carousel.background_image_maxwidth">
+                <source>Max width of background images in px</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Max. Breite der Hintergrundbilder in px</target></alt-trans></trans-unit>
+            <trans-unit id="carousel.wrap">
+                <source>Wrap</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Zyklisch</target></alt-trans></trans-unit>
+            <trans-unit id="carousel.wrap.description">
+                <source>Start the Carousel from the beginning once it has arrived at the end.</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Das Karussell von Vorne beginnen, wenn es am Ende angekommen ist.</target></alt-trans></trans-unit>
+
+            <trans-unit id="carousel_item">
+                <source>Carousel Item</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Karusselitem</target></alt-trans></trans-unit>
+            <trans-unit id="carousel_item.tt_content" approved="yes">
+                <source>Carousel</source>
+            <target state="translated">Karussell</target></trans-unit>
+            <trans-unit id="carousel_item.link">
+                <source>Link</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Link</target></alt-trans></trans-unit>
+            <trans-unit id="carousel_item.header">
+                <source>Header</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Überschrift</target></alt-trans></trans-unit>
+            <trans-unit id="carousel_item.header_layout">
+                <source>Header Layout</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Überschriftenlayout</target></alt-trans></trans-unit>
+            <trans-unit id="carousel_item.bodytext" approved="yes">
+                <source>Text</source>
+            <target state="translated">Text</target></trans-unit>
+            <trans-unit id="carousel_item.text_color" approved="yes">
+                <source>Text Color</source>
+            <target state="translated">Textfarbe</target></trans-unit>
+            <trans-unit id="carousel_item.image" approved="yes">
+                <source>Image</source>
+            <target state="translated">Bild</target></trans-unit>
+            <trans-unit id="carousel_item.background_image" approved="yes">
+                <source>Background Image</source>
+            <target state="translated">Hintergrundbild</target></trans-unit>
+            <trans-unit id="carousel_item.background_color" approved="yes">
+                <source>Background Color</source>
+            <target state="translated">Hintergrundfarbe</target></trans-unit>
+
+            <trans-unit id="carousel_item.item_type.header">
+                <source>Header</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Überschrift</target></alt-trans></trans-unit>
+            <trans-unit id="carousel_item.item_type.textandimage" approved="yes">
+                <source>Text and Image</source>
+            <target state="translated">Text und Bild</target></trans-unit>
+            <trans-unit id="carousel_item.item_type.backgroundimage" approved="yes">
+                <source>Background Image</source>
+            <target state="translated">Hintergrundbild</target></trans-unit>
+            <trans-unit id="carousel_item.item_type.html">
+                <source>HTML</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>HTML</target></alt-trans></trans-unit>
+
+            <trans-unit id="accordion_item">
+                <source>Accordion Item</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Akkordeonitem</target></alt-trans></trans-unit>
+            <trans-unit id="accordion_item.tt_content" approved="yes">
+                <source>Accordion</source>
+            <target state="translated">Akkordeon</target></trans-unit>
+            <trans-unit id="accordion_item.header">
+                <source>Header</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Überschrift</target></alt-trans></trans-unit>
+            <trans-unit id="accordion_item.bodytext" approved="yes">
+                <source>Text</source>
+            <target state="translated">Text</target></trans-unit>
+
+            <trans-unit id="tab.options">
+                <source>Tab Options</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Taboptionen</target></alt-trans></trans-unit>
+            <trans-unit id="tab.default_tab">
+                <source>Default Tab</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Standard-Tab</target></alt-trans></trans-unit>
+
+
+            <trans-unit id="tab_item">
+                <source>Tab Item</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Tab-Item</target></alt-trans></trans-unit>
+            <trans-unit id="tab_item.tt_content">
+                <source>Tab</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Tab</target></alt-trans></trans-unit>
+            <trans-unit id="tab_item.active">
+                <source>Set as default</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Als Standard setzen</target></alt-trans></trans-unit>
+            <trans-unit id="tab_item.header">
+                <source>Header</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Überschrift</target></alt-trans></trans-unit>
+            <trans-unit id="tab_item.bodytext" approved="yes">
+                <source>Text</source>
+            <target state="translated">Text</target></trans-unit>
+
+            <trans-unit id="contextualalternatives.default" approved="yes">
+                <source>Default</source>
+            <target state="translated">Standard</target></trans-unit>
+            <trans-unit id="contextualalternatives.primary">
+                <source>Primary</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Primär</target></alt-trans></trans-unit>
+            <trans-unit id="contextualalternatives.success">
+                <source>Success</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Erfolgreich</target></alt-trans></trans-unit>
+            <trans-unit id="contextualalternatives.info">
+                <source>Info</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Info</target></alt-trans></trans-unit>
+            <trans-unit id="contextualalternatives.warning">
+                <source>Warning</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Warnung</target></alt-trans></trans-unit>
+            <trans-unit id="contextualalternatives.danger">
+                <source>Danger</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Gefahr</target></alt-trans></trans-unit>
+
+            <trans-unit id="external_media">
+                <source>External Media</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Externe Medien</target></alt-trans></trans-unit>
+            <trans-unit id="field.external_media_source">
+                <source>External Media Source</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Externe Medienquellen</target></alt-trans></trans-unit>
+            <trans-unit id="field.external_media_ratio">
+                <source>Ratio</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Verhältnis</target></alt-trans></trans-unit>
+
+            <trans-unit id="field.icon">
+                <source>Icon</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Icon</target></alt-trans></trans-unit>
+            <trans-unit id="field.icon_position">
+                <source>Position</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Position</target></alt-trans></trans-unit>
+            <trans-unit id="field.icon_type">
+                <source>Type</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Typ</target></alt-trans></trans-unit>
+            <trans-unit id="field.icon_size">
+                <source>Size</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Größe</target></alt-trans></trans-unit>
+            <trans-unit id="field.icon_background">
+                <source>Background</source>
+            </trans-unit>
+            <trans-unit id="field.icon_color">
+                <source>Color</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Farbe</target></alt-trans></trans-unit>
+            <trans-unit id="field.icon_background">
+                <source>Background</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Hintergrund</target></alt-trans></trans-unit>
+
+            <trans-unit id="option.none">
+                <source>None</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Keine</target></alt-trans></trans-unit>
+            <trans-unit id="option.left" approved="yes">
+                <source>Left</source>
+            <target state="translated">Links</target></trans-unit>
+            <trans-unit id="option.top">
+                <source>Top</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Oben</target></alt-trans></trans-unit>
+            <trans-unit id="option.right" approved="yes">
+                <source>Right</source>
+            <target state="translated">Rechts</target></trans-unit>
+            <trans-unit id="option.bottom">
+                <source>Bottom</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Unten</target></alt-trans></trans-unit>
+            <trans-unit id="option.default" approved="yes">
+                <source>Default</source>
+            <target state="translated">Standard</target></trans-unit>
+            <trans-unit id="option.square">
+                <source>Square</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Quadrat</target></alt-trans></trans-unit>
+            <trans-unit id="option.circle">
+                <source>Circle</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Kreis</target></alt-trans></trans-unit>
+            <trans-unit id="option.medium">
+                <source>Medium</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Mittel</target></alt-trans></trans-unit>
+            <trans-unit id="option.large">
+                <source>Large</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Groß</target></alt-trans></trans-unit>
+            <trans-unit id="option.awesome">
+                <source>Awesome</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Großartig</target></alt-trans></trans-unit>
+
+            <trans-unit id="tablelayout.default" approved="yes">
+                <source>Default</source>
+            <target state="translated">Standard</target></trans-unit>
+            <trans-unit id="tablelayout.basic">
+                <source>Basic</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Einfach</target></alt-trans></trans-unit>
+            <trans-unit id="tablelayout.striped">
+                <source>Striped rows</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Gestreifte Reihen</target></alt-trans></trans-unit>
+            <trans-unit id="tablelayout.bordered">
+                <source>Bordered table</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Umrandete Tabelle</target></alt-trans></trans-unit>
+            <trans-unit id="tablelayout.hover">
+                <source>Hover rows</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Reihen mit Mauseffekt</target></alt-trans></trans-unit>
+            <trans-unit id="tablelayout.condensed">
+                <source>Condensed table</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Gestauchte Tabelle</target></alt-trans></trans-unit>
+
+            <trans-unit id="listlayout.unordered">
+                <source>Unordered</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Ungeordnet</target></alt-trans></trans-unit>
+            <trans-unit id="listlayout.ordered">
+                <source>Ordered</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Geordnet</target></alt-trans></trans-unit>
+            <trans-unit id="listlayout.unstyled">
+                <source>Unstyled</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Ungestyled</target></alt-trans></trans-unit>
+            <trans-unit id="listlayout.inline">
+                <source>Inline</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Im Text</target></alt-trans></trans-unit>
+
+            <trans-unit id="uploadslayout.default" approved="yes">
+                <source>Default</source>
+            <target state="translated">Standard</target></trans-unit>
+            <trans-unit id="uploadslayout.icons">
+                <source>Display Icons</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Icons anzeigen</target></alt-trans></trans-unit>
+            <trans-unit id="uploadslayout.iconsandpreview">
+                <source>Display Icons and Preview Images</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Icons und Vorschaubild anzeigen</target></alt-trans></trans-unit>
+
+            <trans-unit id="carousellayout.default" approved="yes">
+                <source>Default</source>
+            <target state="translated">Standard</target></trans-unit>
+            <trans-unit id="carousellayout.small">
+                <source>Small</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Klein</target></alt-trans></trans-unit>
+
+            <trans-unit id="tabs.background">
+                <source>Background</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Hintergrund</target></alt-trans></trans-unit>
+            <trans-unit id="colorpicker">
+                <source>Colorpicker</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Farbauswähler</target></alt-trans></trans-unit>
+
+            <trans-unit id="advanced">
+                <source>Advanced</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Fortgeschritten</target></alt-trans></trans-unit>
+            <trans-unit id="settings">
+                <source>Settings</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Einstellungen</target></alt-trans></trans-unit>
+
+        </body>
+    </file>
+</xliff>

@@ -14,13 +14,13 @@ $EM_CONF[$_EXTKEY] = array (
   'title' => 'Bootstrap Package',
   'description' => 'Bootstrap Package delivers a full configured frontend theme for TYPO3, based on the Bootstrap CSS Framework.',
   'category' => 'templates',
-  'constraints' => 
+  'constraints' =>
   array (
-    'depends' => 
+    'depends' =>
     array (
       'typo3' => '7.6.2-8.99.99',
     ),
-    'conflicts' => 
+    'conflicts' =>
     array (
       'css_styled_content' => '*',
       'fluid_styled_content' => '*',
@@ -28,13 +28,13 @@ $EM_CONF[$_EXTKEY] = array (
       'fluidpages' => '*',
       'dyncss' => '*',
     ),
-    'suggests' => 
+    'suggests' =>
     array (
     ),
   ),
-  'autoload' => 
+  'autoload' =>
   array (
-    'psr-4' => 
+    'psr-4' =>
     array (
       'BK2K\\BootstrapPackage\\' => 'Classes',
     ),

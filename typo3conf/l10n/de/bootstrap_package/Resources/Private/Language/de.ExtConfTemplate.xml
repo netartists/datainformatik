@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+
+            <label index="backendSkin.disableBackendSkin"/>
+            <label index="backendSkin.logoTop"/>
+            <label index="backendSkin.logoLogin"/>
+
+            <label index="realUrl.useRealUrlConfig"/>
+
+            <label index="pageTs.disablePageTsRTE"/>
+            <label index="pageTs.disablePageTsTCEFORM"/>
+            <label index="pageTs.disablePageTsTCEMAIN"/>
+            <label index="pageTs.disablePageTsAdmPanel"/>
+            <label index="pageTs.disablePageTsBackendLayouts"/>
+
+            <label index="feature.disableLessProcessing"/>
+
+        </languageKey>
+  </data>
+</T3locallangExt>

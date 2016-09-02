@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z" product-name="bootstrap_package" target-language="de">
+        <header/>
+        <body>
+
+            <trans-unit id="backendSkin.disableBackendSkin">
+                <source>Disable the backend skin: [DEPRECATED] This option will be removed as soon as 6.2 support ends. Meanwhile the backend skin can be disabled for 6.2.</source>
+            <target></target></trans-unit>
+            <trans-unit id="backendSkin.logoTop">
+                <source>Logo Top: Default [../typo3conf/ext/bootstrap_package/Resources/Public/Images/Backend/TopBarLogo@2x.png]</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Logo oben: Standard [../typo3conf/ext/bootstrap_package/Resources/Public/Images/Backend/TopBarLogo@2x.png]</target></alt-trans></trans-unit>
+            <trans-unit id="backendSkin.logoLogin">
+                <source>Logo Login: Default [../typo3conf/ext/bootstrap_package/Resources/Public/Images/Backend/LoginLogo.png]</source>
+            <target></target></trans-unit>
+
+            <trans-unit id="realUrl.useRealUrlConfig">
+                <source>Use RealUrl Config from BootstrapPackage</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Benutze die RealUrl Einstellungen von BootstrapPackage</target></alt-trans></trans-unit>
+
+            <trans-unit id="pageTs.disablePageTsRTE">
+                <source>Disable RTE: If this option is set the config for RTE will not load automatically. Include "FILE:EXT:bootstrap_package/Configuration/PageTS/RTE.txt" in your PageTsConfig to load the config manually.</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Deaktiviere RTE: Wenn diese Option gesetzt ist, wird die Konfiguration für den RTE-Editor nicht automatsich geladen. Die Konfiguration muss nun manuell in PageTSConfig mit der Anweisung "FILE:EXT:bootstrap_package/Configuration/PageTS/RTE.txt" geladen werden.</target></alt-trans></trans-unit>
+            <trans-unit id="pageTs.disablePageTsTCEFORM">
+                <source>Disable TCEFORM: If this option is set the config for TCEFORM will not load automatically. Include "FILE:EXT:bootstrap_package/Configuration/PageTS/TCEFORM.txt" in your PageTsConfig to load the config manually.</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Deaktiviere TCEFORM: Wenn diese Option gesetzt ist wird die Konfiguration von TCEFORM nicht mehr automatsich geladen. Binden Sie das Script mit "FILE:EXT:bootstrap_package/Configuration/PageTS/TCEFORM.txt" manuell im PageTSConfig ein.</target></alt-trans></trans-unit>
+            <trans-unit id="pageTs.disablePageTsTCEMAIN">
+                <source>Disable TCEMAIN: If this option is set the config for TCEMAIN will not load automatically. Include "FILE:EXT:bootstrap_package/Configuration/PageTS/TCEMAIN.txt" in your PageTsConfig to load the config manually.</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Deaktiviere TCEMAIN: Wenn diese Option gesetzt ist wird die Konfiguration von TCEMAIN nicht mehr automatsich geladen. Binden Sie das Script mit "FILE:EXT:bootstrap_package/Configuration/PageTS/TCEMAIN.txt" manuell im PageTSConfig ein.</target></alt-trans></trans-unit>
+            <trans-unit id="pageTs.disablePageTsAdmPanel">
+                <source>Disable admPanel: If this option is set the config for admPanel will not load automatically. Include "FILE:EXT:bootstrap_package/Configuration/PageTS/admPanel.txt" in your PageTsConfig to load the config manually.</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Deaktiviere admPanel: Wenn diese Option gesetzt ist wird die Konfiguration von admPanel nicht mehr automatsich geladen. Binden Sie das Script mit "FILE:EXT:bootstrap_package/Configuration/PageTS/admPanel.txt" manuell im PageTSConfig ein.</target></alt-trans></trans-unit>
+            <trans-unit id="pageTs.disablePageTsBackendLayouts">
+                <source>Disable BackendLayouts: If this option is set the included backend layouts will not load automatically. Include "FILE:EXT:bootstrap_package/Configuration/PageTS/Mod/web_layout.txt" in your PageTsConfig to load the config manually.</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Deaktiviere BackendLayouts: Wenn diese Option gesetzt ist wird die Konfiguration von BackendLayouts nicht mehr automatsich geladen. Binden Sie das Script mit "FILE:EXT:bootstrap_package/Configuration/PageTS/Mod/WebLayout/BackendLayouts.txt" manuell im PageTSConfig ein.</target></alt-trans></trans-unit>
+
+            <trans-unit id="feature.disableLessProcessing">
+                <source>Disable Processing of Less files: WARNING: If this option is set there no more automatic processing of LESS files in the frontend. You will need to provide CSS files instead or handle the processing of the LESS files yourself.</source>
+            <target></target><alt-trans xml:space="preserve" origin="zerlono"><target>Deaktivere die Verarbeitung von Less-Dateien: WARNUNG: Wenn diese Option gesetzt ist, werden keine Less-Dateien mehr verarbeitet. Es können dann nurnoch CSS-Dateien im Layout verwendet werden und  das Übersetzen der Less-Dateien ist Aufgabe des Entwicklers.</target></alt-trans></trans-unit>
+
+        </body>
+    </file>
+</xliff>
