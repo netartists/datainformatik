@@ -15,3 +15,7 @@ Implementierung:
 	- in TYPO3 Backend als static template hinzugefügt
 
 - Extension: adx-less als Less-Compiler eingebaut
+
+- fixed position für header
+
+- JS für Verkleinerung des Headers bei ScrollDown eingebaut
