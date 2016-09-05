@@ -1,4 +1,5 @@
 page.includeCSS {
+    #1 = EXT:di_bootstrap_extender/Resources/Public/Less/Theme/variables.less
     1 = EXT:di_bootstrap_extender/Resources/Public/Css/theme.css
     2 = EXT:di_bootstrap_extender/Resources/Public/Less/Theme/theme.less
 }
