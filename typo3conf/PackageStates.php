@@ -180,6 +180,12 @@ return [
             'packagePath' => 'typo3/sysext/impexp/',
             'suggestions' => [],
         ],
+        'indexed_search' => [
+            'composerName' => 'typo3/cms-indexed-search',
+            'state' => 'active',
+            'packagePath' => 'typo3/sysext/indexed_search/',
+            'suggestions' => [],
+        ],
         'install' => [
             'composerName' => 'typo3/cms-install',
             'state' => 'active',
@@ -270,6 +276,12 @@ return [
             'packagePath' => 'typo3/sysext/adodb/',
             'suggestions' => [],
         ],
+        'bootstrap_package_overrides-master' => [
+            'composerName' => 'typo3-ter/bootstrap_package_overrides',
+            'state' => 'inactive',
+            'packagePath' => 'typo3conf/ext/bootstrap_package_overrides-master/',
+            'suggestions' => [],
+        ],
         'css_styled_content' => [
             'composerName' => 'typo3/cms-css-styled-content',
             'state' => 'inactive',
@@ -292,12 +304,6 @@ return [
             'composerName' => 'typo3/cms-filemetadata',
             'state' => 'inactive',
             'packagePath' => 'typo3/sysext/filemetadata/',
-            'suggestions' => [],
-        ],
-        'indexed_search' => [
-            'composerName' => 'typo3/cms-indexed-search',
-            'state' => 'inactive',
-            'packagePath' => 'typo3/sysext/indexed_search/',
             'suggestions' => [],
         ],
         'indexed_search_mysql' => [

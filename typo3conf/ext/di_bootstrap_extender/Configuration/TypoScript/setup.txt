@@ -6,3 +6,8 @@ page.includeCSS {
 page.includeJSFooter {
     1 = EXT:di_bootstrap_extender/Resources/Public/Javascript/theme.js
 }
+
+# indexed search configuration
+config.index_enable = 1
+config.language = de
+plugin.tx_indexedsearch.show.advancedSearchLink = 0
