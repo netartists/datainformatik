@@ -14,6 +14,8 @@ Implementierung:
     - eigene Less-Klassen in /Configuration/TypoScript/setup.txt hinzugefügt
 	- in TYPO3 Backend als static template hinzugefügt
 
-- Extension: adx-less als Less-Compiler eingebaut
+- Extension: adx-less als Less-Compiler hinzugefügt
 - fixed position für header
-- JS für Verkleinerung des Headers bei ScrollDown eingebaut
+- JS für Verkleinerung des Headers bei ScrollDown implementiert
+- CSS für Verkleinerung des Headers bei ScrollDown implementiert
+- JS für Menü: - Layernavigation bei MouserOver implementiert
