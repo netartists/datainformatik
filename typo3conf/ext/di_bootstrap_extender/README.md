@@ -19,3 +19,4 @@ Implementierung:
 - JS für Verkleinerung des Headers bei ScrollDown implementiert
 - CSS für Verkleinerung des Headers bei ScrollDown implementiert
 - JS für Menü: - Layernavigation bei MouserOver implementiert
+- indexed search aktiviert und konfiguriert
