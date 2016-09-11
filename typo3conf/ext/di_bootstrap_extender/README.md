@@ -10,13 +10,17 @@ Implementierung:
 - TYPO3 Extension di_bootstrap_extender erstellt
     - überschreibt bootstrap templates, layouts, partials
     - überschreibt Constants in /Configuration/TypoScript/constants.txt
-    - eigene CSS-Klassen in /Configuration/TypoScript/setup.txt hinzugefügt
-    - eigene Less-Klassen in /Configuration/TypoScript/setup.txt hinzugefügt
+    - eigene CSS-Dateien in /Configuration/TypoScript/setup.txt hinzugefügt
+    - eigene LESS-Dateien in /Configuration/TypoScript/setup.txt hinzugefügt
+    - LESS-Dateien werden in /Resources/Public/Less/Theme/theme.less eingebunden
 	- in TYPO3 Backend als static template hinzugefügt
 
 - Extension: adx-less als Less-Compiler hinzugefügt
-- fixed position für header
+- LESS, fixed position für header
 - JS für Verkleinerung des Headers bei ScrollDown implementiert
 - CSS für Verkleinerung des Headers bei ScrollDown implementiert
 - JS für Menü: - Layernavigation bei MouserOver implementiert
 - indexed search aktiviert und konfiguriert
+- Frontend Login aktiviert und konfiguriert
+- Frontend Login LESS File angelegt und eingebunden
+- Frontend Login gestyled
