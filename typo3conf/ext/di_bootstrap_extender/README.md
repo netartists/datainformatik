@@ -24,3 +24,4 @@ Implementierung:
 - Frontend Login aktiviert und konfiguriert
 - Frontend Login LESS File angelegt und eingebunden
 - Frontend Login gestyled
+- Responsive Images konfiguriert (data Attribute)

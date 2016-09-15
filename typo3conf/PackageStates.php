@@ -324,6 +324,12 @@ return [
             'packagePath' => 'typo3/sysext/opendocs/',
             'suggestions' => [],
         ],
+        'owl_slider' => [
+            'composerName' => 'comsolit/owl_slider',
+            'state' => 'inactive',
+            'packagePath' => 'typo3conf/ext/owl_slider/',
+            'suggestions' => [],
+        ],
         'recycler' => [
             'composerName' => 'typo3/cms-recycler',
             'state' => 'inactive',
