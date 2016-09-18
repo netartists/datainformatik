@@ -1,0 +1,428 @@
+
+<div name="item{item.uid}" id="item{item.uid}" class="panel panel-default sortable-item layerslider-itemitem">
+    <div class="panel-heading" title="uid:{item.uid}">
+
+        <div class="row">
+            <div class="col-xs-9" onclick="storeCollapseCookie('collapse-{item.slide.uid}-item-{item.uid}')" data-toggle="collapse" data-target="#collapse-{item.slide.uid}-item-{item.uid}" aria-expanded="false" aria-controls="collapse-{slide.uid}-item-{item.uid}" style="cursor: pointer;">
+                <h3 class="panel-title" style="cursor: pointer;">{item.title}</h3>
+            </div>
+            <div class="col-xs-3">
+                <div class="text-right">
+                    <div class="btn-group">
+                        <a class="btn btn-primary btn-circle" href="#collapse-{item.slide.uid}-item-{item.uid}" onclick="storeCollapseCookie('collapse-{item.slide.uid}-item-{item.uid}')" title="{f:translate(key:'partial.item.singleitem.headerbuttons.edit')}" data-toggle="collapse" data-target="#collapse-{item.slide.uid}-item-{item.uid}" aria-expanded="false" aria-controls="collapse-{slide.uid}-item-{item.uid}"><i class="fa fa-fw fa-edit"></i></a>
+                        <a href="#" title="{f:translate(key:'partial.item.singleitem.headerbuttons.copy')}" onclick="copyLayer(this); return false;" class="copyLayerStart btn btn-primary btn-circle" data-layeruidelement="{item.uid}" data-copylayer-uid="{item.uid}"><i class="fa fa-fw fa-files-o"></i></a>
+                        <a href="#" style="display: none;" title="{f:translate(key:'partial.item.singleitem.headerbuttons.stopcopy')}" onclick="copyLayer(this); return false;" data-layeruidelement="{item.uid}" data-stopcopylayer-uid="{item.uid}" class="copyLayerStop btn btn-primary btn-circle"><i style="color: red;" class="fa fa-fw fa-files-o"></i></a>
+                        <a data-toggle="modal" data-target="#delete-item-{item.uid}" title="{f:translate(key:'partial.item.singleitem.headerbuttons.delete')}" class="btn btn-primary btn-circle"><i class="fa fa-fw fa-trash-o"></i></a>
+                        <a class="sort-handle btn btn-primary btn-circle" title="{f:translate(key:'partial.item.singleitem.headerbuttons.sort')}"  href="#" onclick="return false;"><i class="fa fa-fw fa-arrows-v"></i></a>
+                        <f:link.action action="paste" controller="Item" title="{f:translate(key:'partial.item.singleitem.headerbuttons.paste')}" class="pasteLayer btn btn-success btn-circle" style="display: none;" arguments="{slide: item.slide}" additionalAttributes="{onclick:'pasteLayer(this); return false;'}"><i class="fa fa-clipboard"></i></f:link.action>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-lg-4">
+                <f:translate key="partial.item.singleitem.type" /> {item.contenttype}
+            </div>
+            <div class="col-lg-8">
+                <f:if condition="{0:item.contenttype} == {0:'image'}">
+                    <f:then>
+                        <f:if condition="{item.falimage}">
+                            <f:image src="{item.falimage.originalResource.originalFile.uid}" alt="" title="" maxWidth="60" />
+                        </f:if>
+
+                    </f:then>
+                    <f:else>
+                        <f:translate key="partial.item.singleitem.content" /> <f:format.crop maxCharacters="40">{item.content}</f:format.crop>
+                    </f:else>
+                </f:if>
+            </div>
+        </div>
+
+        <div class="collapse collapse-{item.slide.uid}-item-{item.uid}" id="collapse-{item.slide.uid}-item-{item.uid}">
+            <hr />
+
+            <div class="layerslider-slide-inner layer-settings-page-{item.slide.uid}" data-uid="{item.uid}">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#tabs-{item.slide.uid}-item-{item.uid}-1" onclick="storeTabsCookie('tabs-{item.slide.uid}-item-{item.uid}', 1)" aria-controls="home" role="tab" data-toggle="tab"><f:translate key="partial.item.singleitem.tabs.basic" /></a></li>
+                    <li role="presentation"><a href="#tabs-{item.slide.uid}-item-{item.uid}-2" onclick="storeTabsCookie('tabs-{item.slide.uid}-item-{item.uid}', 2)" aria-controls="profile" role="tab" data-toggle="tab"><f:translate key="partial.item.singleitem.tabs.style" /></a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tabs-{item.slide.uid}-item-{item.uid}-1">
+                        <p>&nbsp;</p>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.basic.visibility.label" /></label>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][hidden]" type="checkbox" value="1" {f:if(condition:'{item.hidden}==1', then:'checked')} /> <f:translate key="partial.item.singleitem.tabs.basic.visibility.text" />
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <label><f:translate key="partial.item.singleitem.tabs.basic.starttime.label" /></label>
+                                <div class="form-group">
+                                    <div class='input-group date'>
+                                        <input name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][starttime]" type='text' class="form-control" value="{f:if(condition:'{item.starttime} > 0', then:'{item.starttime->f:format.date(format:\'d.m.Y H:i\')}')}" />
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label><f:translate key="partial.item.singleitem.tabs.basic.endtime.label" /></label>
+                                <div class="form-group">
+                                    <div class='input-group date'>
+                                        <input name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][endtime]" type='text' class="form-control" value="{f:if(condition:'{item.endtime} > 0', then:'{item.endtime->f:format.date(format:\'d.m.Y H:i\')}')}" />
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.basic.name.label" /></label>
+                                    <input name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][title]" class="form-control" value="{item.title}" />
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.basic.name.text" /></p>
+                                </div>
+
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.basic.contenttype.label" /></label>
+                                    <select id="text-{item.uid}" class="item-content-type form-control"
+
+                                            name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][contenttype]" data-item="{item.uid}" onchange="toggleLayerContentType(this)">;
+                                        <option value=""></option>
+                                        <option {f:if(condition: '{0:item.contenttype} == {0:"image"}', then: 'selected="selected"')} value="image"><f:translate key="partial.item.singleitem.tabs.basic.contenttype.option.image" /></option>
+                                        <option {f:if(condition: '{0:item.contenttype} == {0:"paragraph"}', then: 'selected="selected"')} value="paragraph"><f:translate key="partial.item.singleitem.tabs.basic.contenttype.option.paragraph" /></option>
+                                        <option {f:if(condition: '{0:item.contenttype} == {0:"span"}', then: 'selected="selected"')} value="span"><f:translate key="partial.item.singleitem.tabs.basic.contenttype.option.span" /></option>
+                                        <option {f:if(condition: '{0:item.contenttype} == {0:"h1"}', then: 'selected="selected"')} value="h1"><f:translate key="partial.item.singleitem.tabs.basic.contenttype.option.h1" /></option>
+                                        <option {f:if(condition: '{0:item.contenttype} == {0:"h2"}', then: 'selected="selected"')} value="h2"><f:translate key="partial.item.singleitem.tabs.basic.contenttype.option.h2" /></option>
+                                        <option {f:if(condition: '{0:item.contenttype} == {0:"h3"}', then: 'selected="selected"')} value="h3"><f:translate key="partial.item.singleitem.tabs.basic.contenttype.option.h3" /></option>
+                                        <option {f:if(condition: '{0:item.contenttype} == {0:"h4"}', then: 'selected="selected"')} value="h4"><f:translate key="partial.item.singleitem.tabs.basic.contenttype.option.h4" /></option>
+                                        <option {f:if(condition: '{0:item.contenttype} == {0:"h5"}', then: 'selected="selected"')} value="h5"><f:translate key="partial.item.singleitem.tabs.basic.contenttype.option.h5" /></option>
+                                        <option {f:if(condition: '{0:item.contenttype} == {0:"h6"}', then: 'selected="selected"')} value="h6"><f:translate key="partial.item.singleitem.tabs.basic.contenttype.option.h6" /></option>
+                                        <option {f:if(condition: '{0:item.contenttype} == {0:"html"}', then: 'selected="selected"')} value="html"><f:translate key="partial.item.singleitem.tabs.basic.contenttype.option.html" /></option>
+                                    </select>
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.basic.contenttype.text" /></p>
+                                </div>
+
+                                <div class="form-group">
+                                    <div data-itemcontenttext="{item.uid}" style="display: none;">
+                                        <label><f:translate key="partial.item.singleitem.tabs.basic.layercontent.label" /></label>
+                                        <textarea name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][content]" class="form-control layer-{item.slide.uid}-{item.uid}-content" data-element="content" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}" style="width: 45%; height: 60px;">{item.content}</textarea>
+                                    </div>
+
+                                    <div class="row" data-itemimage="{item.uid}" style="display: none;">
+                                        <div class="col-lg-12">
+                                            <div class="row">
+                                                <f:if condition="{item.falimage}">
+                                                    <div class="col-lg-2 col-sm-3 col-xs-3">
+                                                        <f:image src="{item.falimage.originalResource.originalFile.uid}" maxWidth="200" style="width: 100%; height:auto; max-width: 100%;" additionalAttributes="{data-itemurl:'{f:uri.image(src:\'{item.falimage.originalResource.originalFile.uid}\')}', data-element:'image-content'}"/>
+                                                    </div>
+                                                    <div class="col-lg-6 col-sm-8 col-xs-8">
+                                                        <div class="form-group">
+                                                            <label for=""><f:translate key="item.linkfile.image.title" /></label>
+                                                            <input name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][fileReference][title]" type='text' class="form-control" value="{item.falimage.originalResource.title}" />
+
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for=""><f:translate key="item.linkfile.image.alternative" /></label>
+                                                            <input name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][fileReference][alternative]" type='text' class="form-control" value="{item.falimage.originalResource.alternative}" />
+                                                        </div>
+                                                    </div>
+                                                </f:if>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="text-right">
+                                                        <button type="button" class="btn btn-primary "  onclick="window.open('{fileWizardUrl}&bparams=item_{item.uid}|||gif,jpg,jpeg,tif,bmp,pcx,tga,png,pdf,ai|', 'myWindow', 'width=800, height=800, scrollbars=1')">
+                                                            <f:translate key="button.addImages" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.basic.link.label" /></label>
+                                    <div class="input-group">
+                                        <input name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][link]" onchange="$(this).focus();" data-formengine-input-name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][link]" id="input_wizard_{item.uid}" class="form-control" value="{item.link}">
+                                        <span class="input-group-addon" onclick="window.open('{linkWizardUrl}&P[formName]=slider&P[itemName]=tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][link]&P[currentValue]={item.link}&P[fieldChangeFunc]', 'myWindow', 'width=800, height=800')" style="cursor: pointer;"><span style="cursor: pointer;" class="fa fa-edit" id="wizard_{item.uid}"></span></span>
+                                    </div>
+
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.basic.link.text" /></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tabs-{item.slide.uid}-item-{item.uid}-2">
+                        <p>&nbsp;</p>
+
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.leftposition.label" /></label>
+                                    <div class="input-group">
+                                        <input data-element="left" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}" name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][left]" class="form-control" id="layer-{item.slide.uid}-{item.uid}-left" title="" value="{item.configuration.left}" />
+                                        <span class="input-group-addon">px</span>
+                                    </div>
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.leftposition.text" arguments="{0:item.slide.slider.options.width}" /></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.topposition.label" /></label>
+                                    <div class="input-group">
+                                        <input data-element="top" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}" name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][top]" class="form-control" id="layer-{item.slide.uid}-{item.uid}-top" title="" value="{item.configuration.top}" />
+                                        <span class="input-group-addon">px</span>
+                                    </div>
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.topposition.text" arguments="{0:item.slide.slider.options.width}"/></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.width.label" /></label>
+                                    <div class="input-group">
+                                        <input data-element="width" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}" name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][width]" class="form-control" id="layer-{item.slide.uid}-{item.uid}-width" title="" value="{item.configuration.width}" />
+                                        <span class="input-group-addon">px</span>
+                                    </div>
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.width.text" arguments="{0:item.slide.slider.options.width}"/></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.textalign.label" /></label>
+                                    <select title=""
+                                            data-element="textalign" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}" class="form-control"
+                                            name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][textalign]">
+                                        <option {f:if(condition: '{0:item.configuration.textalign} == {0:"left"}', then: 'selected="selected"')} value="left"><f:translate key="partial.item.singleitem.tabs.style.textalign.option.left" /></option>
+                                        <option {f:if(condition: '{0:item.configuration.textalign} == {0:"right"}', then: 'selected="selected"')} value="right"><f:translate key="partial.item.singleitem.tabs.style.textalign.option.right" /></option>
+                                        <option {f:if(condition: '{0:item.configuration.textalign} == {0:"center"}', then: 'selected="selected"')} value="center"><f:translate key="partial.item.singleitem.tabs.style.textalign.option.center" /></option>
+                                        <option {f:if(condition: '{0:item.configuration.textalign} == {0:"justify"}', then: 'selected="selected"')} value="justify"><f:translate key="partial.item.singleitem.tabs.style.textalign.option.justify" /></option>
+                                    </select>
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.textalign.text" /></p>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.fontsize.label" /></label>
+                                    <div class="input-group">
+                                        <input data-element="fontsize" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}" name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][fontsize]" class="form-control" id="layer-{item.slide.uid}-{item.uid}-fontsize" title="" value="{item.configuration.fontsize}" />
+                                        <span class="input-group-addon">px</span>
+                                    </div>
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.fontsize.text" /></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+
+                            </div>
+
+                        </div>
+                        <hr />
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.fontcolor.label" /></label>
+                                    <input  data-element="fontcolor" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}" name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][color]" class="form-control" id="layer-{item.slide.uid}-{item.uid}-fontcolor" value="{item.configuration.color}" title="" />
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.fontcolor.text" /></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.backgroundcolor.label" /></label>
+                                    <input  data-element="backgroundcolor" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}" name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][bgcolor]" class="form-control" id="layer-{item.slide.uid}-{item.uid}-bgcolor" value="{item.configuration.bgcolor}" title="" />
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.backgroundcolor.text" /></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+
+                            </div>
+
+                        </div>
+                        <hr />
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.paddingtop.label" /></label>
+                                    <div class="input-group">
+                                        <input  data-element="paddingtop" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}" name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][paddingtop]" class="form-control" id="layer-{item.slide.uid}-{item.uid}-paddingtop" value="{item.configuration.paddingtop}" title="" />
+                                        <span class="input-group-addon">px</span>
+                                    </div>
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.paddingtop.text" /></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.paddingright.label" /></label>
+                                    <div class="input-group">
+                                        <input data-element="paddingright" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}" name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][paddingright]" class="form-control" id="layer-{item.slide.uid}-{item.uid}-paddingright" value="{item.configuration.paddingright}" title="" />
+                                        <span class="input-group-addon">px</span>
+                                    </div>
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.paddingright.text" /></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.paddingbottom.label" /></label>
+                                    <div class="input-group">
+                                        <input  data-element="paddingbottom" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}" name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][paddingbottom]" class="form-control" id="layer-{item.slide.uid}-{item.uid}-paddingbottom" value="{item.configuration.paddingbottom}" title="" />
+                                        <span class="input-group-addon">px</span>
+                                    </div>
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.paddingbottom.text" /></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.paddingleft.label" /></label>
+                                    <div class="input-group">
+                                        <input data-element="paddingleft" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}" name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][paddingleft]" class="form-control" id="layer-{item.slide.uid}-{item.uid}-paddingleft" value="{item.configuration.paddingleft}" title="" />
+                                        <span class="input-group-addon">px</span>
+                                    </div>
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.paddingleft.text" /></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.bordertop.label" /></label>
+                                    <input data-element="bordertop" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}" name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][bordertop]" class="form-control" id="layer-{item.slide.uid}-{item.uid}-bordertop" value="{item.configuration.bordertop}" title="" />
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.bordertop.text" /></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.borderright.label" /></label>
+                                    <input data-element="borderright" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}"  name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][borderright]" class="form-control" id="layer-{item.slide.uid}-{item.uid}-borderright" value="{item.configuration.borderright}" title="" />
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.borderright.text" /></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.borderbottom.label" /></label>
+                                    <input data-element="borderbottom" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}"  name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][borderbottom]" class="form-control" id="layer-{item.slide.uid}-{item.uid}-borderbottom" value="{item.configuration.borderbottom}" title="" />
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.borderbottom.text" /></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.borderleft.label" /></label>
+                                    <input data-element="borderleft" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}"  name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][borderleft]" class="form-control" id="layer-{item.slide.uid}-{item.uid}-borderleft" value="{item.configuration.borderleft}" title="" />
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.borderleft.text" /></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.owncss.label" /></label>
+                                    <input data-element="cssstyle" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}"  name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][cssstyles]" class="form-control" id="layer-{item.slide.uid}-{item.uid}-cssstyles" value="{item.configuration.cssstyles}" title="" />
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.owncss.text" /></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label><f:translate key="partial.item.singleitem.tabs.style.cssclass.label" /></label>
+                                    <input data-element="cssclass" data-useupdate="true" data-layerid="layer-{item.slide.uid}-{item.uid}"  name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][configuration][cssclass]" class="form-control" id="layer-{item.slide.uid}-{item.uid}-cssclass" value="{item.configuration.cssclass}" title="" />
+                                    <p class="help-block"><f:translate key="partial.item.singleitem.tabs.style.cssclass.text" /></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="delete-item-{item.uid}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><f:translate key="modal.delete.title" /></h4>
+                    </div>
+                    <div class="modal-body">
+                        <f:translate key="modal.delete.body" arguments="{0:item.title}" />
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-default" data-dismiss="modal"><f:translate key="modal.buttons.no" /></a>
+                        <f:form.button name="deleteLayer" class="btn btn-danger" value="{item.uid}"><i class="fa fa-trash-o"></i> <f:translate key="modal.buttons.yes" /></f:form.button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <input type="hidden" class="sortable-value" name="tx_layerslider_web_layersliderm1[slider][formslides][{item.slide.uid}][formitems][{item.uid}][sorting]" value="{iteration.index}" {f:if(condition:'{item.hidden}==1', then:'checked')} />
+
+    <script>
+        $('#tab-container-{item.slide.uid}-{item.uid}').easytabs();
+    </script>
+    <script>
+        var slideUid = {item.slide.uid};
+        var itemUid = {item.uid};
+
+        if ($.cookie('collapse-'+slideUid+'-item-'+itemUid)) {
+            $('#collapse-'+slideUid+'-item-'+itemUid).addClass('in');
+        }
+
+        if( $.cookie('tabs-'+slideUid+'-item-'+itemUid)) {
+            $('a[href="#tabs-'+slideUid+'-item-'+itemUid+'-' + $.cookie('tabs-'+slideUid+'-item-'+itemUid) + '"]').trigger('click');
+        }
+
+    </script>
+
+</div>
+
+

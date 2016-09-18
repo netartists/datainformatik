@@ -270,6 +270,18 @@ return [
             'packagePath' => 'typo3conf/ext/adx_less/',
             'suggestions' => [],
         ],
+        'layerslider' => [
+            'composerName' => 'MINNAV/layerslider',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/layerslider/',
+            'suggestions' => [],
+        ],
+        'slick' => [
+            'composerName' => 'slick',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/slick/',
+            'suggestions' => [],
+        ],
         'adodb' => [
             'composerName' => 'typo3/cms-adodb',
             'state' => 'inactive',
@@ -306,6 +318,12 @@ return [
             'packagePath' => 'typo3/sysext/filemetadata/',
             'suggestions' => [],
         ],
+        'flexslider' => [
+            'composerName' => 'sotastudio/flexslider',
+            'state' => 'inactive',
+            'packagePath' => 'typo3conf/ext/flexslider/',
+            'suggestions' => [],
+        ],
         'indexed_search_mysql' => [
             'composerName' => 'typo3/cms-indexed-search-mysql',
             'state' => 'inactive',
@@ -322,12 +340,6 @@ return [
             'composerName' => 'typo3/cms-opendocs',
             'state' => 'inactive',
             'packagePath' => 'typo3/sysext/opendocs/',
-            'suggestions' => [],
-        ],
-        'owl_slider' => [
-            'composerName' => 'comsolit/owl_slider',
-            'state' => 'inactive',
-            'packagePath' => 'typo3conf/ext/owl_slider/',
             'suggestions' => [],
         ],
         'recycler' => [

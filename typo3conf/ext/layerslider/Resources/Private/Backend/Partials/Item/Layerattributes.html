@@ -1,0 +1,69 @@
+<f:section name="class">
+    ls-l {f:if(condition: '{item.configuration.cssclass}', then:'{item.configuration.cssclass}')}
+</f:section>
+
+<f:section name="data">
+    {f:if(condition: '{0:item.configuration.fade} == {0:"true"}', then:'fadein:true;')}
+    {f:if(condition: '{0:item.configuration.fade} == {0:"false"}', then:'fadein:false;')}
+    {f:if(condition: '{0:item.configuration.offsetxin} == {0:"left"}', then:'offsetxin:left;')}
+    {f:if(condition: '{0:item.configuration.offsetxin} == {0:"right"}', then:'offsetxin:right;')}
+    {f:if(condition: '{0:item.configuration.offsetxin} == {0:"number"}', then:'offsetxin:{item.configuration.offsetxinnumber};')}
+    {f:if(condition: '{0:item.configuration.offsetyin} == {0:"top"}', then:'offsetyin:top;')}
+    {f:if(condition: '{0:item.configuration.offsetyin} == {0:"bottom"}', then:'offsetyin:bottom;')}
+    {f:if(condition: '{0:item.configuration.offsetyin} == {0:"number"}', then:'offsetyin:{item.configuration.offsetyinnumber};')}
+    {f:if(condition: '{item.configuration.transitioninduration}', then:'durationin:{item.configuration.transitioninduration};')}
+    {f:if(condition: '{item.configuration.transitionineasing}', then:'easingIn:{item.configuration.transitionineasing};')}
+    {f:if(condition: '{item.configuration.transitionindelay}', then:'delayIn:{item.configuration.transitionindelay};')}
+    {f:if(condition: '{item.configuration.transitioninscalex} != \'\'', then:'scalexin:{item.configuration.transitioninscalex};')}
+    {f:if(condition: '{item.configuration.transitioninscaley} != \'\'', then:'scaleyin:{item.configuration.transitioninscaley};')}
+    {f:if(condition: '{item.configuration.transitioninskewx} != \'\'', then:'skewxin:{item.configuration.transitioninskewx};')}
+    {f:if(condition: '{item.configuration.transitioninskewy} != \'\'', then:'skewyin:{item.configuration.transitioninskewy};')}
+    {f:if(condition: '{item.configuration.transitioninrotation} != \'\'', then:'rotatein:{item.configuration.transitioninrotation};')}
+    {f:if(condition: '{item.configuration.transitioninrotationx} != \'\'', then:'rotatexin:{item.configuration.transitioninrotationx};')}
+    {f:if(condition: '{item.configuration.transitioninrotationy} != \'\'', then:'rotateyin:{item.configuration.transitioninrotationy};')}
+    {f:if(condition: '{0:item.configuration.fadeout} == {0:"true"}', then:'fadeout:true;')}
+    {f:if(condition: '{0:item.configuration.fadeout} == {0:"false"}', then:'fadeout:false;')}
+    {f:if(condition: '{0:item.configuration.offsetxout} == {0:"left"}', then:'offsetxout:left;')}
+    {f:if(condition: '{0:item.configuration.offsetxout} == {0:"right"}', then:'offsetxout:right;')}
+    {f:if(condition: '{0:item.configuration.offsetxout} == {0:"number"}', then:'offsetxout:{item.configuration.offsetxoutnumber};')}
+    {f:if(condition: '{0:item.configuration.offsetyout} == {0:"top"}', then:'offsetyout:top;')}
+    {f:if(condition: '{0:item.configuration.offsetyout} == {0:"bottom"}', then:'offsetyout:bottom;')}
+    {f:if(condition: '{0:item.configuration.offsetyout} == {0:"number"}', then:'offsetyout:{item.configuration.offsetyoutnumber};')}
+    {f:if(condition: '{item.configuration.transitionoutduration}', then:'durationout:{item.configuration.transitionoutduration};')}
+    {f:if(condition: '{item.configuration.transitionouteasing}', then:'easingOut:{item.configuration.transitionouteasing};')}
+    {f:if(condition: '{item.configuration.transitionoutscalex} != \'\'', then:'scalexout:{item.configuration.transitionoutscalex};')}
+    {f:if(condition: '{item.configuration.transitionoutscaley} != \'\'', then:'scaleyout:{item.configuration.transitionoutscaley};')}
+    {f:if(condition: '{item.configuration.transitionoutskewx} != \'\'', then:'skewxout:{item.configuration.transitionoutskewx};')}
+    {f:if(condition: '{item.configuration.transitionoutskewy} != \'\'', then:'skewyout:{item.configuration.transitionoutskewy};')}
+    {f:if(condition: '{item.configuration.transitionoutrotation} != \'\'', then:'rotateout:{item.configuration.transitionoutrotation};')}
+    {f:if(condition: '{item.configuration.transitionoutrotationx} != \'\'', then:'rotatexout:{item.configuration.transitionoutrotationx};')}
+    {f:if(condition: '{item.configuration.transitionoutrotationy} != \'\'', then:'rotateyout:{item.configuration.transitionoutrotationy};')}
+    {f:if(condition: '{item.configuration.showuntil} != \'\'', then:'showuntil:{item.configuration.showuntil};')}
+    {f:if(condition: '{item.configuration.parallaxlevel} != \'\'', then:'parallaxlevel:{item.configuration.parallaxlevel};')}
+    {f:if(condition: '{item.configuration.distance} != \'\'', then:'distance:{item.configuration.distance};')}
+</f:section>
+
+<f:section name="id">
+    layer-{item.slide.uid}-{item.uid}
+</f:section>
+
+<f:section name="style">
+position: absolute;
+    {f:if(condition: '{item.hidden}', then:'opacity:0.3; background: red;')}
+    {f:if(condition: '{item.configuration.left}', then:'left:{item.configuration.left}px;')}
+    {f:if(condition: '{item.configuration.top}', then:'top:{item.configuration.top}px;')}
+    <f:if condition="{item.configuration.width}">width:{item.configuration.width}px;</f:if>
+    {f:if(condition: '{item.configuration.textalign}', then:'text-align:{item.configuration.textalign};')}
+    {f:if(condition: '{item.configuration.fontsize}', then:'font-size:{item.configuration.fontsize}px;')}
+    {f:if(condition: '{item.configuration.color}', then:'color:{item.configuration.color};')}
+    {f:if(condition: '{item.configuration.bgcolor}', then:'background-color:{item.configuration.bgcolor};')}
+    {f:if(condition: '{item.configuration.paddingtop}', then:'padding-top:{item.configuration.paddingtop}px;')}
+    {f:if(condition: '{item.configuration.paddingright}', then:'padding-right:{item.configuration.paddingright}px;')}
+    {f:if(condition: '{item.configuration.paddingbottom}', then:'padding-bottom:{item.configuration.paddingbottom}px;')}
+    {f:if(condition: '{item.configuration.paddingleft}', then:'padding-left:{item.configuration.paddingleft}px;')}
+    {f:if(condition: '{item.configuration.bordertop}', then:'border-top:{item.configuration.bordertop};')}
+    {f:if(condition: '{item.configuration.borderright}', then:'border-right:{item.configuration.borderright};')}
+    {f:if(condition: '{item.configuration.borderbottom}', then:'border-bottom:{item.configuration.borderbottom};')}
+    {f:if(condition: '{item.configuration.borderleft}', then:'border-left:{item.configuration.borderleft};')}
+    {f:if(condition: '{item.configuration.cssstyles}', then:'{item.configuration.cssstyles}')}
+</f:section>

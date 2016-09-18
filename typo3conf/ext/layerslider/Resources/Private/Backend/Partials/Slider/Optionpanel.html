@@ -1,0 +1,692 @@
+<div class="modal fade" id="optionPanel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel"><f:translate key="partial.slider.optionpanel.header" /></h4>
+			</div>
+			<div class="modal-body container-fluid">
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4><i class="fa fa-gear"></i> <f:translate key="partial.slider.optionpanel.general" /></h4>
+					</div>
+					<div class="panel-body">
+
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label for="title"><f:translate key="partial.slider.optionpanel.title.label" /></label>
+									<f:form.textfield class="form-control" property="title" id="title"/>
+									<p class="help-block"><f:translate key="partial.slider.optionpanel.title.text" /></p>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+						<div>
+
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#tabs1" aria-controls="home" role="tab" data-toggle="tab"><f:translate key="partial.slider.optionpanel.tabs.basic" /></a></li>
+								<li role="presentation"><a href="#tabs2" aria-controls="home" role="tab" data-toggle="tab"><f:translate key="partial.slider.optionpanel.tabs.navigation" /></a></li>
+								<li role="presentation"><a href="#tabs3" aria-controls="home" role="tab" data-toggle="tab"><f:translate key="partial.slider.optionpanel.tabs.timingseffects" /></a></li>
+								<li role="presentation"><a href="#tabs4" aria-controls="home" role="tab" data-toggle="tab"><f:translate key="partial.slider.optionpanel.tabs.responsive" /></a></li>
+								<li role="presentation"><a href="#tabs5" aria-controls="home" role="tab" data-toggle="tab"><f:translate key="partial.slider.optionpanel.tabs.background" /></a></li>
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="tabs1">
+									<p>&nbsp;</p>
+									<div class="row">
+										<div class="col-md-4">
+
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.width.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="width" class="form-control" property="options.width" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.width.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.width.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.height.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="width" class="form-control" property="options.height" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.height.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.height.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.firstlayer.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="width" class="form-control" property="options.firstLayer" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.firstlayer.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.firstlayer.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.autoplayvideos.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="autoPlayVideos" property="options.autoPlayVideos" value="1" checked="{slider.options.autoPlayVideos}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.autoplayvideos.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.autoplayvideos.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.autopause.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.select id="autoPauseSlideshow" class="form-control" property="options.autoPauseSlideshow" options="{auto:'auto', true:'on', false:'of'}"  />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.autopause.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.autopause.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.youtubepreview.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="youtubePreview" class="form-control" property="options.youtubePreview" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.youtubepreview.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.youtubepreview.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="col-md-4">
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.autostart.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="autoStart" class="" property="options.autoStart" value="1" checked="{slider.options.autoStart}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.autostart.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.autostart.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.twowayslideshow.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="twoWaySlideshow" class="" property="options.twoWaySlideshow" value="1" checked="{slider.options.twoWaySlideshow}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.twowayslideshow.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.twowayslideshow.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.randomslideshow.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="randomSlideshow" class="" property="options.randomSlideshow" value="1" checked="{slider.options.randomSlideshow}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.randomslideshow.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.randomslideshow.text2" /</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.imagepreload.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="imgPreload" class="" property="options.imgPreload" value="1" checked="{slider.options.imgPreload}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.randomslideshow.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.randomslideshow.text2"/> </p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.pauseonhover.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="pauseOnHover" class="" property="options.pauseOnHover" value="1" checked="{slider.options.pauseOnHover}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.pauseonhover.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.pauseonhover.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.loops.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="youtubePreview" class="form-control" property="options.loops" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.loops.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.loops.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.forceloopnums.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="forceLoopNum" class="" property="options.forceLoopNum" value="1" checked="{slider.options.forceLoopNum}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.forceloopnums.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.forceloopnums.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.showbartimer.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="showBarTimer" class="" property="options.showBarTimer" value="1" checked="{slider.options.showBarTimer}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.forceloopnums.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.forceloopnums.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.showcircletimer.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="showCircleTimer" class="" property="options.showCircleTimer" value="1" checked="{slider.options.showCircleTimer}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.showcircletimer.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.showcircletimer.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="col-md-4">
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.skin.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="skin" class="form-control" property="options.skin" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.skin.text1" /></p>
+														<p class="help-block">
+															<f:translate key="partial.slider.optionpanel.tabs.basic.skin.text2" />
+														<ul>
+															<li>borderlessdark</li>
+															<li>borderlessdark3d</li>
+															<li>borderlesslight</li>
+															<li>borderlesslight3d</li>
+															<li>carousel</li>
+															<li>darkskin</li>
+															<li>defaultskin</li>
+															<li>fullwidth</li>
+															<li>fullwidthdark</li>
+															<li>glass</li>
+															<li>lightskin</li>
+															<li>minimal</li>
+															<li>noskin</li>
+															<li>v5</li>
+														</ul>
+														</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5>skinsPath</h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="youtubePreview" class="form-control" property="options.skinsPath" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.skinspath.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.skinspath.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="tabs2">
+									<p>&nbsp;</p>
+
+
+									<div class="row">
+										<div class="col-md-4">
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.keybnav.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="keybNav" class="" property="options.keybNav" value="1" checked="{slider.options.keybNav}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.keybnav.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.keybnav.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.navprevnext.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="navPrevNext" class="" property="options.navPrevNext" value="1" checked="{slider.options.navPrevNext}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.navprevnext.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.navprevnext.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.navstartstop.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="navStartStop" class="" property="options.navStartStop" value="1" checked="{slider.options.navStartStop}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.navstartstop.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.navstartstop.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.navbuttons.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="navButtons" class="" property="options.navButtons" value="1" checked="{slider.options.navButtons}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.navbuttons.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.navbuttons.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.hoverprevnext.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="hoverPrevNext" class="" property="options.hoverPrevNext" value="1" checked="{slider.options.hoverPrevNext}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.hoverprevnext.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.hoverprevnext.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.hoverbottomnav.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="hoverBottomNav" class="" property="options.hoverBottomNav" value="1" checked="{slider.options.hoverBottomNav}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.hoverbottomnav.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.hoverbottomnav.text2" /></p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-4">
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.thumbnailnavigation.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.select id="thumbnailNavigation" class="form-control" property="options.thumbnailNavigation" prependOptionLabel="" prependOptionValue="" options="{hover:'hover', disabled:'disabled', always:'always'}"  />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.thumbnailnavigation.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.thumbnailnavigation.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.tnwidth.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="tnWidth" class="form-control" property="options.tnWidth" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.tnwidth.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.tnwidth.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.tnheight.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="tnWidth" class="form-control" property="options.tnHeight" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.tnheight.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.tnheight.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="col-md-4">
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.tncontainerwidth.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="tnWidth" class="form-control" property="options.tnContainerWidth" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.tncontainerwidth.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.tncontainerwidth.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.tnactiveopacity.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="tnWidth" class="form-control" property="options.tnActiveOpacity" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.tnactiveopacity.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.tnactiveopacity.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.tninactiveopacity.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="tnWidth" class="form-control" property="options.tnInactiveOpacity" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.tninactiveopacity.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.tninactiveopacity.text2" /></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="tabs3">
+									<p>&nbsp;</p>
+
+									<div class="row">
+										<div class="col-md-4">
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.slidedirectoin.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.select id="slideDirection" class="form-control" property="options.slideDirection" prependOptionLabel="" prependOptionValue="" options="{right:'right', left:'left', top:'top', bottom:'bottom', fade:'fade'}"  />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.slidedirectoin.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.slidedirectoin.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.slidedelay.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="slideDelay" class="form-control" property="options.slideDelay" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.slidedelay.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.slidedelay.text2" /></p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-4">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.durationin.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="slideDelay" class="form-control" property="options.durationIn" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.durationin.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.durationin.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.durationout.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="slideDelay" class="form-control" property="options.durationOut" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.durationout.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.durationout.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.delayin.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="slideDelay" class="form-control" property="options.delayIn" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.delayin.text1" /></p>
+														<p class="help-block"><f:translate key="Delay time of the slide-in animation." /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.delayout.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="slideDelay" class="form-control" property="options.delayOut" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.delayout.text1" /></p>
+														<p class="help-block"><f:translate key="Delay time of the slide-out animation." /></p>
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="col-md-4">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.easingin.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.select id="easingIn" class="form-control" property="options.easingIn" prependOptionLabel="" prependOptionValue="" prependOptionLabel="" prependOptionValue="" options="{linear:'linear', swing:'swing', easeInQuad:'easeInQuad', easeOutQuad:'easeOutQuad', easeInOutQuad:'easeInOutQuad', easeInCubic:'easeInCubic', easeOutCubic:'easeOutCubic', easeInOutCubic:'easeInOutCubic', easeInQuart:'easeInQuart', easeOutQuart:'easeOutQuart', easeInOutQuart:'easeInOutQuart', easeInQuint:'easeInQuint', easeOutQuint:'easeOutQuint', easeInOutQuint:'easeInOutQuint', easeInExpo:'easeInExpo', easeOutExpo:'easeOutExpo', easeInOutExpo:'easeInOutExpo', easeInSine:'easeInSine', easeOutSine:'easeOutSine', easeInOutSine:'easeInOutSine', easeInCirc:'easeInCirc', easeOutCirc:'easeOutCirc', easeInOutCirc:'easeInOutCirc', easeInElastic:'easeInElastic', easeOutElastic:'easeOutElastic', easeInOutElastic:'easeInOutElastic', easeInBack:'easeInBack', easeOutBack:'easeOutBack', easeInOutBack:'easeInOutBack', easeInBounce:'easeInBounce', easeOutBounce:'easeOutBounce', easeInOutBounce:'easeInOutBounce'}"  />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.easingin.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.easingin.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.easingout.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.select id="easingOut" class="form-control" property="options.easingOut" prependOptionLabel="" prependOptionValue="" prependOptionLabel="" prependOptionValue="" options="{linear:'linear', swing:'swing', easeInQuad:'easeInQuad', easeOutQuad:'easeOutQuad', easeInOutQuad:'easeInOutQuad', easeInCubic:'easeInCubic', easeOutCubic:'easeOutCubic', easeInOutCubic:'easeInOutCubic', easeInQuart:'easeInQuart', easeOutQuart:'easeOutQuart', easeInOutQuart:'easeInOutQuart', easeInQuint:'easeInQuint', easeOutQuint:'easeOutQuint', easeInOutQuint:'easeInOutQuint', easeInExpo:'easeInExpo', easeOutExpo:'easeOutExpo', easeInOutExpo:'easeInOutExpo', easeInSine:'easeInSine', easeOutSine:'easeOutSine', easeInOutSine:'easeInOutSine', easeInCirc:'easeInCirc', easeOutCirc:'easeOutCirc', easeInOutCirc:'easeInOutCirc', easeInElastic:'easeInElastic', easeOutElastic:'easeOutElastic', easeInOutElastic:'easeInOutElastic', easeInBack:'easeInBack', easeOutBack:'easeOutBack', easeInOutBack:'easeInOutBack', easeInBounce:'easeInBounce', easeOutBounce:'easeOutBounce', easeInOutBounce:'easeInOutBounce'}"  />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.easingout.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.easingout.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+								<div role="tabpanel" class="tab-pane" id="tabs4">
+									<p>&nbsp;</p>
+
+									<div class="row">
+										<div class="col-md-4">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.responsive.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="responsive" class="" property="options.responsive" value="1" checked="{slider.options.responsive}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.responsive.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.responsive.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.responsiveunder.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<div class="input-group">
+															<f:form.textfield id="responsiveUnder" class="form-control" property="options.responsiveUnder" />
+															<span class="input-group-addon">px</span>
+														</div>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.responsiveunder.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.responsiveunder.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="col-md-4">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.touchnav.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.checkbox id="touchNav" class="" property="options.touchNav" value="1" checked="{slider.options.touchNav}==1" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.touchnav.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.touchnav.text2" /></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+								<div role="tabpanel" class="tab-pane" id="tabs5">
+									<p>&nbsp;</p>
+									<div class="row">
+										<div class="col-md-4">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.globalbgcolor.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="globalBGColor" class="form-control" property="options.globalBGColor" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.globalbgcolor.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.globalbgcolor.text2" /></p>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="col-md-4">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h5><f:translate key="partial.slider.optionpanel.tabs.basic.globalbgcolor.label" /></h5>
+												</div>
+												<div class="panel-body">
+													<div class="form-group">
+														<f:form.textfield id="globalBGImage" class="form-control" property="options.globalBGImage" />
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.globalbgcolor.text1" /></p>
+														<p class="help-block"><f:translate key="partial.slider.optionpanel.tabs.basic.globalbgcolor.text2" /></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="#" type="button" class="btn btn-default" data-dismiss="modal"><f:translate key="modal.buttons.close" /></a>
+				<button type="button" onclick="this.form.submit();" class="btn btn-primary"><f:translate key="modal.buttons.save" /></button>
+			</div>
+		</div>
+	</div>
+</div>

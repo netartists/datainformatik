@@ -1,0 +1,1429 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-11-06T14:47:41Z" product-name="layerslider">
+		<header/>
+		<body>
+
+			<trans-unit id="slider.list.header">
+				<source>Existing sliders</source>
+			</trans-unit>
+			<trans-unit id="slider.list.news">
+				<source>News about Layerslider</source>
+			</trans-unit>
+			<trans-unit id="slider.list.news.more">
+				<source>Read this news</source>
+			</trans-unit>
+			<trans-unit id="slider.list.noslider.text">
+				<source>No sliders where found. Create a new one by choosing one of this options:</source>
+			</trans-unit>
+			<trans-unit id="slider.list.noslider.button.byhand">
+				<source>Create a new slider by hand</source>
+			</trans-unit>
+			<trans-unit id="slider.list.noslider.button.wizard">
+				<source>Create a new slider with the wizard</source>
+			</trans-unit>
+			<trans-unit id="slider.list.buttons.edit">
+				<source>Edit this slider</source>
+			</trans-unit>
+			<trans-unit id="slider.list.buttons.copy">
+				<source>Copy this slider</source>
+			</trans-unit>
+			<trans-unit id="slider.list.buttons.delete">
+				<source>Delete this slide</source>
+			</trans-unit>
+
+			<trans-unit id="slider.list.warning.maxInputVars.header">
+				<source>Warning</source>
+			</trans-unit>
+			<trans-unit id="slider.list.warning.maxInputVars.body">
+				<source>The php configuration "max_input_vars" seems very low. If you create a slider with many slides and layers this can cause some unexpected errors on. Please increase the max_input_vars in php.ini or with htacces to 4000 or above.</source>
+			</trans-unit>
+			<trans-unit id="slider.list.warning.maxInputVarsExceeded.header">
+				<source>Warning</source>
+			</trans-unit>
+			<trans-unit id="slider.list.warning.maxInputVarsExceeded.body">
+				<source>The php configuration "max_input_vars" is lower than this request need. You slider was not updated at all. Please check the slider and increase the php "max_input_vars".</source>
+			</trans-unit>
+
+			<trans-unit id="slider.edit.header.manage">
+				<source>Manage Slides</source>
+			</trans-unit>
+			<trans-unit id="slider.edit.button.newslide">
+				<source>New Slide (autosave)</source>
+			</trans-unit>
+
+			<trans-unit id="slider.new.header">
+				<source>Create a new slider</source>
+			</trans-unit>
+			<trans-unit id="slider.new.form.title.label">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="slider.new.form.title.text">
+				<source>Name of the slider. Save the slider after your input. You will be redirected to manage the slider.</source>
+			</trans-unit>
+
+			<trans-unit id="wizard.index.header">
+				<source>Create a new slider with the wizard</source>
+			</trans-unit>
+			<trans-unit id="wizard.index.subheader">
+				<source>You can select the preferred type of the slider you wish to create</source>
+			</trans-unit>
+			<trans-unit id="wizard.index.option.type.header">
+				<source>Slider type</source>
+			</trans-unit>
+			<trans-unit id="wizard.index.option.standard.header">
+				<source>Standard</source>
+			</trans-unit>
+			<trans-unit id="wizard.index.option.standard.text">
+				<source>Use this slider type, if the slider should be embedded in your layout. The width of the slider is at least the same width of your content.</source>
+			</trans-unit>
+			<trans-unit id="wizard.index.option.fullwidth.header">
+				<source>Full width</source>
+			</trans-unit>
+			<trans-unit id="wizard.index.option.fullwidth.text">
+				<source>Use this slider type, if the slider should be in full width mode. In this mode, you need a layout, that provide a area where the width is not set to a maximum width. The slider has always the same width as the browser window.</source>
+			</trans-unit>
+			<trans-unit id="wizard.index.button.back">
+				<source>Go back to list (no save, configuration lost!)</source>
+			</trans-unit>
+			<trans-unit id="wizard.index.button.next">
+				<source>Next Step: Select images</source>
+			</trans-unit>
+
+			<trans-unit id="wizard.step1.header">
+				<source>Select images for the slides</source>
+			</trans-unit>
+			<trans-unit id="wizard.step1.text">
+				<source><![CDATA[<p>Each image represents one slide. You can add as many images you need. For the best results make sure, that each image has the same resolution as each other.</p>
+					<p>If your content area has a width of 1200px, use images that have at least this width. In other cases the images would lokking not very nice.</p>]]></source>
+			</trans-unit>
+			<trans-unit id="wizard.step1.button.back">
+				<source>Go back to start</source>
+			</trans-unit>
+			<trans-unit id="wizard.step1.button.next">
+				<source>Next Step: Additional settings</source>
+			</trans-unit>
+
+			<trans-unit id="wizard.step2.header">
+				<source>Set additional settings</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.subheader">
+				<source>You can set here some important settings for a quick start!</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.header">
+				<source>Your Slides</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.fullwidth.header">
+				<source>Full width extended setting</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.fullwidth.pagewidth.header">
+				<source>Page width</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.fullwidth.pagewidth.text">
+				<source><![CDATA[<p>You plan to create a full width slider. The slider has at the end the same width like the browser window. You can set here the width in pixels of you content width. In this case, you can place layers in the slide, that are catched to your page content border. Leave this empty, if you need the layers in full width too.</p>]]></source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.controls.header">
+				<source>Controls</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.controls.light.header">
+				<source>Light controls</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.controls.light.text">
+				<source>Set this option to use light controls in your slider.</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.controls.dark.header">
+				<source>Dark controls</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.controls.dark.text">
+				<source>Set this option to use dark controls in your slider.</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.controls.no.header">
+				<source>No controls</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.controls.no.text">
+				<source>Set this option to hide the controls in your slider.</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.thumbs.hover.header">
+				<source>Show thumbs on hover</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.thumbs.hover.text">
+				<source>Thumbnails on hover at the bottom navigation are shown for the slides</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.thumbs.always.header">
+				<source>Show thumbs always</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.thumbs.always.text">
+				<source>Dots Navigation is disabled on the bottom. Thumbnails are always visible.</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.thumbs.hide.header">
+				<source>Hide Thumbs</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.thumbs.hide.text">
+				<source>Thumbnails on hover at the bottom navigation are hidden for the slides</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.timingeffect.header">
+				<source>Timings &amp; Effects</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.timingeffect.timing.header">
+				<source>Slide Timing</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.timingeffect.timing.text">
+				<source>You can set, how long at least one slide is visible. Default time is 4 seconds. This value is saved as millisonds. 1000 milliseconds = 1 second.</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.timingeffect.effect.header">
+				<source>Slide Effect</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.slides.settings.timingeffect.effect.text">
+				<source>Here you can set, which effect for the slide changes is used. You can later use more effects and different for each slide. The keyword for this is "Transitions"!</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.button.back">
+				<source>Go back to images</source>
+			</trans-unit>
+			<trans-unit id="wizard.step2.button.next">
+				<source>Finish: Save and open</source>
+			</trans-unit>
+
+			<trans-unit id="migration.index.header">
+				<source>Migration assistant for jQuery layerslider plugin</source>
+			</trans-unit>
+			<trans-unit id="migration.index.information">
+				<source>Information about this assistant</source>
+			</trans-unit>
+			<trans-unit id="migration.index.information.text">
+				<source>
+					<![CDATA[
+					<p>
+						With this assistant you can easy integrate the <a href="http://codecanyon.net/item/layerslider-responsive-jquery-slider-plugin/922100" target="_blank">jQuery Layerslider Plugin</a> to this extension. Your downloaded ZIP file
+						from CodeCanyon is very big, and because of limited upload sizes on many servers, this wizard show you a list of needed files from the ZIP of the plugin.
+						For each file you see if it exist, and if not, you can use the Drag & Drop area below.<br />
+						You can drag the complete layerslider folder from your downloaded ZIP file and single files too. The migration assistant knows every file and put it
+						on the right place. If you upload a skin, please drag the complete skin folder or a single skin folder.<br />
+
+						If you have downloaded a new version of the jquery layerslider plugin, you can use this migration assistent too.
+					</p>
+					]]>
+				</source>
+			</trans-unit>
+			<trans-unit id="migration.index.uploadarea.header">
+				<source>Upload area</source>
+			</trans-unit>
+			<trans-unit id="migration.index.uploadarea.btn.recheck">
+				<source>Reload page &amp; recheck file status</source>
+			</trans-unit>
+			<trans-unit id="migration.index.uploadarea.defaultmessage.init">
+				<source>Drop a single file or the whole layerslider folder here</source>
+			</trans-unit>
+			<trans-unit id="migration.index.uploadarea.defaultmessage.extended">
+				<source>All files uploaded. Drop a single file or the whole layerslider folder here to upload files again</source>
+			</trans-unit>
+			<trans-unit id="migration.index.file.exist">
+				<source>File exist</source>
+			</trans-unit>
+			<trans-unit id="migration.index.file.miss">
+				<source>File missed</source>
+			</trans-unit>
+			<trans-unit id="controller.migration.upload.error.filepath">
+				<source>Filepath not permitted</source>
+			</trans-unit>
+			<trans-unit id="controller.migration.upload.error.filesize">
+				<source>Filesize not permitted</source>
+			</trans-unit>
+			<trans-unit id="controller.migration.upload.error.expectedfile">
+				<source>Uploaded file is not equal to the expected target</source>
+			</trans-unit>
+			<trans-unit id="controller.migration.upload.error.notallowed">
+				<source>This file is not allowed to upload</source>
+			</trans-unit>
+			<trans-unit id="controller.migration.upload.error.skinfilewofolder">
+				<source>File not saved. Skin files have to uploaded only with their skin folder!</source>
+			</trans-unit>
+
+
+
+			<trans-unit id="slide.linkfile.image.title">
+				<source>Image title</source>
+			</trans-unit>
+			<trans-unit id="slide.linkfile.image.alternative">
+				<source>Image alternative text</source>
+			</trans-unit>
+
+			<trans-unit id="item.linkfile.image.title">
+				<source>Image title</source>
+			</trans-unit>
+			<trans-unit id="item.linkfile.image.alternative">
+				<source>Image alternative text</source>
+			</trans-unit>
+
+			<trans-unit id="partial.item.singleitem.headerbuttons.edit">
+				<source>Edit this layer</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.headerbuttons.copy">
+				<source>Copy this layer. Save the slider first!</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.headerbuttons.stopcopy">
+				<source>Stop copy this layer</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.headerbuttons.delete">
+				<source>Delete this layer</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.headerbuttons.sort">
+				<source>Sort this layer (save slider after sorting!)</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.headerbuttons.paste">
+				<source>Paste layer after</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.type">
+				<source>Type:</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.content">
+				<source>Content:</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic">
+				<source>Basic options</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.visibility.label">
+				<source>Visibility</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.visibility.text">
+				<source>Item is hidden</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.starttime.label">
+				<source>Start date/time</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.endtime.label">
+				<source>End date/time</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.name.label">
+				<source>Name for this layer</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.name.text">
+				<source>The name is used only for TYPO3 Backend</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.contenttype.label">
+				<source>Content type</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.contenttype.text">
+				<source>Select the content type of this layer. You can choose betwen different types</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.contenttype.option.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.contenttype.option.paragraph">
+				<source>Paragraph</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.contenttype.option.span">
+				<source>Span</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.contenttype.option.h1">
+				<source>Header 1</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.contenttype.option.h2">
+				<source>Header 2</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.contenttype.option.h3">
+				<source>Header 3</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.contenttype.option.h4">
+				<source>Header 4</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.contenttype.option.h5">
+				<source>Header 5</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.contenttype.option.h6">
+				<source>Header 6</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.contenttype.option.html">
+				<source>Pure html code</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.layercontent.label">
+				<source>Layer content</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.link.label">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.basic.link.text">
+				<source>Link for this layer. Example: 'http://www.google.de'. Please note: links are rendered only in frontend!</source>
+			</trans-unit>
+
+			<trans-unit id="partial.item.singleitem.tabs.style">
+				<source>Layer styles</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.leftposition.label">
+				<source>Left position</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.leftposition.text">
+				<source>The left position for this elemet from top/left corner.  In responsive mode this value will be down-calculated by the sliders actual width value. You slider has a width value of %1 pixel</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.topposition.label">
+				<source>Top position</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.topposition.text">
+				<source>The top position for this elemet from top/left corner.  In responsive mode this value will be down-calculated by the sliders actual width value. You slider has a width value of %1 pixel</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.width.label">
+				<source>Element width</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.width.text">
+				<source>The width for this element. You can use pixel value to set the width. In responsive mode this value will be down-calculated by the sliders actual width value. Your slider has a width value of %1 pixel</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.textalign.label">
+				<source>Text align</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.textalign.text">
+				<source>Select one from the possible values: left, right, center, justify</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.textalign.option.left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.textalign.option.right">
+				<source>Right</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.textalign.option.center">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.textalign.option.justify">
+				<source>Justify</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.fontsize.label">
+				<source>Font size</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.fontsize.text">
+				<source>Font size in pixels. The font size would be automatic down calculated</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.fontcolor.label">
+				<source>Font color</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.fontcolor.text">
+				<source>You can use HEX (#000000) or rgb (rgb(0,0,0)) or rgba (rgba(0,0,0,.5)) code</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.backgroundcolor.label">
+				<source>Background color</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.backgroundcolor.text">
+				<source>You can use HEX (#000000) or rgb (rgb(0,0,0)) or rgba (rgba(0,0,0,.5)) code</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.paddingtop.label">
+				<source>Padding top</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.paddingtop.text">
+				<source>Padding top. Example: 10</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.paddingright.label">
+				<source>Padding right</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.paddingright.text">
+				<source>Padding right. Example: 10</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.paddingbottom.label">
+				<source>Padding bottom</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.paddingbottom.text">
+				<source>Padding bottom. Example: 10</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.paddingleft.label">
+				<source>Padding left</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.paddingleft.text">
+				<source>Padding left. Example: 10</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.bordertop.label">
+				<source>Border top</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.bordertop.text">
+				<source>Border top.. You can use CSS standard like '1px solid #FFF'.</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.borderright.label">
+				<source>Border right</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.borderright.text">
+				<source>Border right. You can use CSS standard like '1px solid #FFF'.</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.borderbottom.label">
+				<source>Border bottom</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.borderbottom.text">
+				<source>Border bottom. You can use CSS standard like '1px solid #FFF'.</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.borderleft.label">
+				<source>Border left</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.borderleft.text">
+				<source>Border left. You can use CSS standard like '1px solid #FFF'.</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.owncss.label">
+				<source>Own css styles</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.owncss.text">
+				<source>You can use any further inline css styles on this element. Split each inline css code with a semikolon. Example: 'border-radius: 10px; -moz-border-radius: 10px;'</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.cssclass.label">
+				<source>Additional css classes</source>
+			</trans-unit>
+			<trans-unit id="partial.item.singleitem.tabs.style.cssclass.text">
+				<source>You can use an extra own css class. If you need more than one additional class, split the class names with a space.</source>
+			</trans-unit>
+
+			<trans-unit id="partial.slide.singleitem.headerbuttons.edit">
+				<source>Edit this slide</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.headerbuttons.delete">
+				<source>Delete this slide</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.headerbuttons.copy">
+				<source>Copy this slide. Save the slider first!</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.headerbuttons.copystop">
+				<source>Stop copy this slide</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.headerbuttons.sort">
+				<source>Sort this slide (save slider after sorting!)</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.headerbuttons.paste">
+				<source>Paste slide after</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic">
+				<source>Basic options</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.slideimage">
+				<source>Slide Image</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers">
+				<source>Layers for this slide</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.visibility.label">
+				<source>Visibility</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.visibility.text">
+				<source>Slide is hidden</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.starttime.label">
+				<source>Start date/time</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.endtime.label">
+				<source>End date/time</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.name.label">
+				<source>Name for this Slide</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.name.text">
+				<source>The name is used only for TYPO3 Backend</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.delay.label">
+				<source>Slide delay</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.delay.text">
+				<source>Here you can set the time interval between slide changes, this slide will stay visible for the time specified here. This value is in millisecs, so the value 1000 means 1 second. Please don't use 0 or very low values.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.transitions.label">
+				<source>Transitions</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.transitions.text">
+				<source>You can choose between the old and the new 3D/2D slide transitions introduced in version 4.0.0.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.notransitions.header">
+				<source>Settings when 2D/3D transition is not used</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.slidein.label">
+				<source>Slide in</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.slidein.text">
+				<source>The duration of the slide in animation. This value is in millisecs, so the value 1000 means 1 second.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.easingin.label">
+				<source>Easing in</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.easingin.text">
+				<source>Easing (type of transition) of the slide-in animation.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.delayin.label">
+				<source>Delay in</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.delayin.text">
+				<source>Easing (type of transition) of the slide-in animation.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.slideout.label">
+				<source>Slide out</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.slideout.text">
+				<source>The duration of the slide out animation. This value is in millisecs, so the value 1000 means 1 second.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.easingout.label">
+				<source>Easing out</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.easingout.text">
+				<source>Easing (type of transition) of the slide-out animation.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.delayout.label">
+				<source>Delay out</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.delayout.text">
+				<source>The duration of the delay out animation. This value is in millisecs, so the value 1000 means 1 second.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.link.label">
+				<source>Link this Slide</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.link.text">
+				<source>If you want to link the whole slide, enter the URL of your link here or use the link wizard.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.cssclass.label">
+				<source>CSS class</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.cssclass.text">
+				<source>You can apply an css attribute on the HTML element of this slide to work with it in your custom CSS or Javascript code.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.deeplink.label">
+				<source>Deeplink</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.basic.deeplink.text">
+				<source>You can specify a slide alias name which you can use in your URLs with a hash mark, so LayerSlider will start with the corresponding slide.</source>
+			</trans-unit>
+
+			<trans-unit id="partial.slide.singleitem.tabs.image.title">
+				<source>Image title</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.image.alternative">
+				<source>Image alternative text</source>
+			</trans-unit>
+
+			<trans-unit id="partial.slide.singleitem.tabs.layers.header">
+				<source>Manage layer items</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.message">
+				<source><![CDATA[
+				<p><strong>Important:</strong> If you manage layers with positioning with your mouse on this stage, you have to do this on a stage that represent the width and height from the original width and height from your slider. For the best results configure the slider as an responsive slider (default.) The measure of the stage is the same as you configured in the slider options under "width" and "height". In your best case, that "width" and "height" have the same dimensions as the background image for each slide!. If the area in the front-end is with an lower height and width, all elements would be placed with an corrected left/top value!</p>
+				]]></source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.positioningstage">
+				<source>Positioning stage</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.grid">
+				<source>Set grid positioning:</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.nogrid">
+				<source>no grid</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.objectsnap">
+				<source>Set object snap:</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.movement">
+				<source>Constrain movement:</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.movement.none">
+				<source>none:</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.movement.vertical">
+				<source>vertical:</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.movement.horizontal">
+				<source>horizontal: </source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.layertimewarning.header">
+				<source>Warning!</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.layertimewarning.text">
+				<source><![CDATA[One or more layers in this slide have a longer time set, as the duration of this slide is. This means, that some effects on this layers are not visible or not working as expected.
+				All green layers in the timeline should stop with the red slide duration! Check the layer animations like duration, delay or show until.<br /><br />
+				If you dont have any delays set, all layers starts the transition out, when the slide change starts. In that case you can ignore this warning.]]></source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.timeline.buttons.play">
+				<source>Play</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.timeline.buttons.pause">
+				<source>Pause</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.timeline.buttons.reverse">
+				<source>Reverse</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.timeline.buttons.resume">
+				<source>Resume</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.timeline.buttons.restart">
+				<source>Restart</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.timeline.slideline">
+				<source>Slide delay (red) | slide out (white)</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.timeline.updatebutton">
+				<source>Update the position stage</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.timeline.showtools">
+				<source>Show timeline tools</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in">
+				<source>Transition in</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.horizontal.label">
+				<source>Horizontal</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.horizontal.text">
+				<source>Select one from the possible slide in horizontal directions</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.horizontal.option.left">
+				<source>Slide from left</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.horizontal.option.right">
+				<source>Slide from right</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.horizontal.option.pixels">
+				<source>By pixels</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.horizontal.bypixels.left.label">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.horizontal.bypixels.left.text">
+				<source>Positive or negative number.</source>
+			</trans-unit>
+
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.vertical.label">
+				<source>Vertical</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.vertical.text">
+				<source>Select one from the possible slide in vertical directions</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.vertical.option.top">
+				<source>Slide from top</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.vertical.option.bottom">
+				<source>Slide from bottom</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.vertical.option.pixels">
+				<source>By pixels</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.vertical.bypixels.top.label">
+				<source>Top</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.vertical.bypixels.top.text">
+				<source>Positive or negative number.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.duration.label">
+				<source>Duration</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.duration.text">
+				<source>The duration of the slide in animation. This value is in millisecs, so the value 1000 means 1 second. Lower values results faster animations.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.easing.label">
+				<source>Easing</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.easing.text">
+				<source>Easing (type of transition) of the slide-in animation</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.delay.label">
+				<source>Delay</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.delay.text">
+				<source>Delay before the animation start when the layer slides in. This value is in millisecs, so the value 1000 means 1 second.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.rotate.label">
+				<source>Rotate</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.rotate.text">
+				<source>Rotates the layer clockwise from the given angle to zero degree. Negative values are allowed for anticlockwise rotation.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.rotatex.label">
+				<source>Rotate X</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.rotatex.text">
+				<source>Rotates the layer along the X (horizontal) axis from the given angle to zero degree. Negative values are allowed for reverse direction</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.rotatey.label">
+				<source>Rotate Y</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.rotatey.text">
+				<source>Rotates the layer along the Y (vertical) axis from the given angle to zero degree. Negative values are allowed for reverse direction</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.scalex.label">
+				<source>Scale X</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.scalex.text">
+				<source>Scales the layer's width from the given value to its original size. Range between 0 and 1 are allowed (0.2)</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.scaley.label">
+				<source>Scale Y</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.scaley.text">
+				<source>Scales the layer's height from the given value to its original size. Range between 0 and 1 are allowed (0.2)</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.skewx.label">
+				<source>Skew X</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.skewx.text">
+				<source>Skews the layer along the X (horizontal) axis from the given angle to 0 degree. Negative values are allowed for reverse direction.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.skewy.label">
+				<source>Skew Y</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.skewy.text">
+				<source>Skews the layer along the Y (vertical) axis from the given angle to 0 degree. Negative values are allowed for reverse direction.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.fade.label">
+				<source>Fade in</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.fade.text">
+				<source>Fade in the layer</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.in.fade.text">
+				<source>Fade in the layer</source>
+			</trans-unit>
+
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out">
+				<source>Transition out</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.horizontal.label">
+				<source>Horizontal</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.horizontal.text">
+				<source>Select one from the possible slide out horizontal directions</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.horizontal.option.left">
+				<source>Slide to left</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.horizontal.option.right">
+				<source>Slide to right</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.horizontal.option.pixels">
+				<source>By pixels</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.horizontal.bypixels.left.label">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.horizontal.bypixels.left.text">
+				<source>Positive or negative number</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.vertical.label">
+				<source>Vertical</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.vertical.text">
+				<source>Select one from the possible slide out vertical directions</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.vertical.option.top">
+				<source>Slide top top</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.vertical.option.bottom">
+				<source>Slide to bottom</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.vertical.option.pixels">
+				<source>By pixels</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.vertical.bypixels.top.label">
+				<source>Top</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.vertical.bypixels.top.text">
+				<source>Positive or negative number</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.duration.label">
+				<source>Duration</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.duration.text">
+				<source>The duration of the slide in animation. This value is in millisecs, so the value 1000 means 1 second. Lower values results faster animations.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.easing.label">
+				<source>Easing</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.easing.text">
+				<source>Easing (type of transition) of the slide-out animation.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.rotate.label">
+				<source>Rotate</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.rotate.text">
+				<source>Rotates the layer clockwise from the given angle to zero degree. Negative values are allowed for anticlockwise rotation.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.rotatex.label">
+				<source>Rotate X</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.rotatex.text">
+				<source>Rotates the layer along the X (horizontal) axis from the given angle to zero degree. Negative values are allowed for reverse direction.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.rotatey.label">
+				<source>Rotate Y</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.rotatey.text">
+				<source>Rotates the layer along the Y (vertical) axis from the given angle to zero degree. Negative values are allowed for reverse direction.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.scalex.label">
+				<source>Scale X</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.scalex.text">
+				<source>Scales the layer's width from the given value to its original size. Range between 0 and 1 are allowed (0.2)</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.scaley.label">
+				<source>Scale Y</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.scaley.text">
+				<source>Scales the layer's height from the given value to its original size. Range between 0 and 1 are allowed (0.2)</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.skewx.label">
+				<source>Skew X</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.skewx.text">
+				<source>Skews the layer along the X (horizontal) axis from the given angle to 0 degree. Negative values are allowed for reverse direction.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.skewy.label">
+				<source>Skew Y</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.skewy.text">
+				<source>Skews the layer along the Y (vertical) axis from the given angle to 0 degree. Negative values are allowed for reverse direction.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.fade.label">
+				<source>Fade out</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.fade.text">
+				<source>Fade Out the layer.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.distance.label">
+				<source>Distance</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.distance.text">
+				<source>The default value is -1 which means that the layer will be positioned exactly outside of the slide container. You can use the default setting in most of the cases. If you need to set the start or end position of the layer from further of the edges of the slide container, you can use 2, 3 or higher values.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.showuntil.label">
+				<source>Show until</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.showuntil.text">
+				<source>The layer will be visible for the time you specify here, then it will slide out. You can use this setting for layers to leave the slide before the slide itself animates out, or for example before other layers will slide in. This value in millisecs, so the value 1000 means 1 second.</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.parallax.label">
+				<source>Parallax level</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.transitions.out.parallax.text">
+				<source>Nice feature to create a fancy parallax effect by moving your mouse over the slider. You can use both positive or negative values (for opposite directions).</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.button.new">
+				<source>New Layer (autosave)</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.singleitem.tabs.layers.alert.savefirst">
+				<source>Please add at first a Slide image. Then save the slider and come back to this page. After save you can add new layers to this slide.</source>
+			</trans-unit>
+
+			<trans-unit id="partial.slide.transitions.header">
+				<source>LayerSlider 2D &amp; 3D transition gallery</source>
+			</trans-unit>
+			<trans-unit id="partial.slide.transitions.text">
+				<source>You can see all the available 2D &amp; 3D transitions in the list below. Please move your mouse over the names of the transitions and you will see a real-time preview of the selected transition. Click on each transition for use in this slide. Please note, that not all browsers are compatible with CSS3 3D transitions. You can use 3D transitions with the latest version of Chrome (except on Win XP), Firefox, Safari, and soon with Opera, and of course with the CSS3 3D capable mobile browsers. In all other browsers the slider will switch into a 2D fallback mode.</source>
+			</trans-unit>
+
+			<trans-unit id="partial.slider.optionpanel.header">
+				<source>Slider Options</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.general">
+				<source>General slider options</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.title.label">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.title.text">
+				<source>Name of the slider. Save the slider after your input. You will be redirected to manage the slider.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic">
+				<source>Basic</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.navigation">
+				<source>Navigation</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.timingseffects">
+				<source>Timings &amp; effects</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.responsive">
+				<source>Responsive</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.background">
+				<source>Background</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.width.label">
+				<source>width</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.width.text1">
+				<source>number (in pixels like 1280px or in percent like 100%). Default: 1280px</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.width.text2">
+				<source>The width of the slider. For best results set this to the width of your slide image width's and use the slider with the option "responsive (default on)".</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.height.label">
+				<source>height</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.height.text1">
+				<source>number (in pixels like 720px). Default: 720px</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.height.text2">
+				<source>The height of the slider. For best results set this to the height of your slide image height's and use the slider with the option "responsive (default on)".</source>
+			</trans-unit>
+
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.firstlayer.label">
+				<source>firstLayer</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.firstlayer.text1">
+				<source>number (positive integer) or 'random'. Default: 1</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.firstlayer.text2">
+				<source>LayerSlider will begin with this layer. Use the word 'random' to start with a random layer.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.autoplayvideos.label">
+				<source>autoPlayVideos</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.autoplayvideos.text1">
+				<source>on or off. Default: on</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.autoplayvideos.text2">
+				<source>If on, slider will autoplay youtube / vimeo videos - you can use it with autoPauseSlideshow.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.autopause.label">
+				<source>autoPauseSlideshow</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.autopause.text1">
+				<source>'auto', true or false. Default: 'auto'</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.autopause.text2">
+				<source>auto, on or off. 'auto' means, if autoPlayVideos is set to on, slideshow will stop UNTIL the video is playing and after that it continues. True means slideshow will stop and it won't continue after video is played.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.youtubepreview.label">
+				<source>youtubePreview</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.youtubepreview.text1">
+				<source>Default: maxresdefault.jpg</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.youtubepreview.text2">
+				<source>Default thumbnail picture of YouTube videos. Can be 'maxresdefault.jpg', 'hqdefault.jpg', 'mqdefault.jpg' or 'default.jpg'. Note, that 'maxresdefault.jpg' os not available to all (not HD) videos.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.autostart.label">
+				<source>autoStart</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.autostart.text1">
+				<source>on or off. Default: on</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.autostart.text2">
+				<source>If on, slideshow will automatically start after loading the page.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.twowayslideshow.label">
+				<source>twoWaySlideshow</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.twowayslideshow.text1">
+				<source>on or off. Default: off</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.twowayslideshow.text2">
+				<source>If on, slideshow will go backwards if you click the prev button.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.randomslideshow.label">
+				<source>randomSlideshow</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.randomslideshow.text1">
+				<source>on or off. Default: off</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.randomslideshow.text2">
+				<source>If on, LayerSlider will change to a random layer instead of changing to the next / prev layer. Note that 'loops' feature won't work with randomSlideshow!</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.imagepreload.label">
+				<source>imgPreload</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.randomslideshow.text1">
+				<source>on or off. Default: on</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.randomslideshow.text2">
+				<source>Image preload. Preloads all images and background-images of the next layer.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.pauseonhover.label">
+				<source>pauseOnHover</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.pauseonhover.text1">
+				<source>on or off. Default: on</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.pauseonhover.text2">
+				<source>If on, SlideShow will pause when you move the mouse pointer over the LayerSlider container.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.loops.label">
+				<source>loops</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.loops.text1">
+				<source>number (0 or a positive integer). Default: 0</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.loops.text2">
+				<source>Number of loops if autoStart set true (0 means infinite).</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.forceloopnums.label">
+				<source>forceLoopNum</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.forceloopnums.text1">
+				<source>on or off. Default: on</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.forceloopnums.text2">
+				<source>If true, the slider will always stop at the given number of loops even if the user restarts the slideshow.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.showbartimer.label">
+				<source>showBarTimer</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.forceloopnums.text1">
+				<source>on or off. Default: off</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.forceloopnums.text2">
+				<source>You can show or hide the bar timer.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.showcircletimer.label">
+				<source>showCircleTimer</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.showcircletimer.text1">
+				<source>on or off. Default: on</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.showcircletimer.text2">
+				<source>You can show or hide the circle timer.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.skin.label">
+				<source>skin</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.skin.text1">
+				<source>name_of_the_skin Default: glass</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.skin.text2">
+				<source><![CDATA[You can change the skin of the Slider. You can choose one of the pre-installed skin on the list or type a own skin name in. The skin name represents the folder where the skin files are located. If you choose a own skin you have set 'skinsPath' manually!
+								<br />
+								<br />
+								<strong>Pre-installed skins:</strong>
+				]]></source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.skinspath.label">
+				<source>skinsPath</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.skinspath.text1">
+				<source>path_of_the_skins_folder. Default: internal</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.skinspath.text2">
+				<source>You can change the default path of the skins folder. Example: /fileadmin/templates/my_awsome_skin</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.keybnav.label">
+				<source>keybNav</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.keybnav.text1">
+				<source>on or off. Default: on</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.keybnav.text2">
+				<source>Keyboard navigation. You can navigate with the left and right arrow keys.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.navprevnext.label">
+				<source>navPrevNext</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.navprevnext.text1">
+				<source>on or off. Default: on</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.navprevnext.text2">
+				<source>If off, Prev and Next buttons will be invisible.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.navstartstop.label">
+				<source>navStartStop</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.navstartstop.text1">
+				<source>on or off. Default: on</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.navstartstop.text2">
+				<source>If off, Start and Stop buttons will be invisible.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.navbuttons.label">
+				<source>navButtons</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.navbuttons.text1">
+				<source>on or off. Default: on</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.navbuttons.text2">
+				<source>If off, slide buttons will be invisible.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.hoverprevnext.label">
+				<source>hoverPrevNext</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.hoverprevnext.text1">
+				<source>on or off. Default: on</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.hoverprevnext.text2">
+				<source>If on, the prev and next buttons will be shown only if you move your mouse over the slider.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.hoverbottomnav.label">
+				<source>hoverBottomNav</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.hoverbottomnav.text1">
+				<source>on or off. Default: off</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.hoverbottomnav.text2">
+				<source>If on, the bottom navigation controls (with also thumbnails) will be shown only if you move your mouse over the slider.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.thumbnailnavigation.label">
+				<source>thumbnailNavigation</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.thumbnailnavigation.text1">
+				<source>'hover', 'always' or 'disabled'. Default: 'hover'</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.thumbnailnavigation.text2">
+				<source>Thumbnail navigation mode. Can be 'disabled', 'hover', 'always'. Note, that 'hover' setting needs navButtons true!</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.tnwidth.label">
+				<source>tnWidth</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.tnwidth.text1">
+				<source>number (in pixels, a positive integer). Default: 100</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.tnwidth.text2">
+				<source>Width of the thumbnails (in pixels).</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.tnheight.label">
+				<source>tnHeight</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.tnheight.text1">
+				<source>number (in pixels, a positive integer). Default: 60</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.tnheight.text2">
+				<source>Height of the thumbnails (in pixels).</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.tncontainerwidth.label">
+				<source>tnContainerWidth</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.tncontainerwidth.text1">
+				<source>width. Default: 60%</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.tncontainerwidth.text2">
+				<source>Default width of the thumbnail container, for example: 100 (pixels) or 60%</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.tnactiveopacity.label">
+				<source>tnActiveOpacity</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.tnactiveopacity.text1">
+				<source>number (0 or a positive integer lower, than 100). Default: 35</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.tnactiveopacity.text2">
+				<source>Opacity of the active thumbnail (0-100).</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.tninactiveopacity.label">
+				<source>tnInactiveOpacity</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.tninactiveopacity.text1">
+				<source>number (0 or a positive integer lower, than 100). Default: 100</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.tninactiveopacity.text2">
+				<source>Opacity of the inactive thumbnail (0-100).</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.slidedirectoin.label">
+				<source>slideDirection</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.slidedirectoin.text1">
+				<source>'left', 'right', 'top', 'bottom' or 'fade' *. Default: right</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.slidedirectoin.text2">
+				<source><![CDATA[Slide direction. New layers sliding FROM(!) this direction.<br />
+				* From version 1.6 you can use the fade parameter if you want to fade in / out a sublayer instead of sliding. Note, that fade is working ONLY on sublayers but not on layers so if you want to fade in / out a sublayer (instead of sliding), you have to add the slidedirection or the slideoutdirection property to that sublayer and you cannot use fade as a global property
+				]]></source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.slidedelay.label">
+				<source>slideDelay</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.slidedelay.text1">
+				<source>number (millisecs). Default: 4000</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.slidedelay.text2">
+				<source>Time before the next slide will be loading.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.durationin.label">
+				<source>durationIn</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.durationin.text1">
+				<source>number (millisecs). Default: 1000</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.durationin.text2">
+				<source>Duration of the slide-in animation.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.durationout.label">
+				<source>durationOut</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.durationout.text1">
+				<source>number (millisecs). Default: 1000</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.durationout.text2">
+				<source>Duration of the slide-out animation.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.delayin.label">
+				<source>delayIn</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.delayin.text1">
+				<source>number (millisecs). Default: 0</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.delayin.text2">
+				<source>Delay time of the slide-in animation.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.delayout.label">
+				<source>delayOut</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.delayout.text1">
+				<source>number (millisecs). Default: 0</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.delayout.text2">
+				<source>Delay time of the slide-out animation.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.easingin.label">
+				<source>easingIn</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.easingin.text1">
+				<source>easing (all easing types of jQuery UI Effects Core can be used) Default: easeInOutQuint</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.easingin.text2">
+				<source><![CDATA[Easing (type of transition) of the slide-in animation.<br /><strong>You can click here to view all easing types: <a href="http://api.jqueryui.com/easings/" target="_blank">Easings jQuery UI API</a></strong>]]></source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.easingout.label">
+				<source>easingOut</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.easingout.text1">
+				<source>easing (all easing types of jQuery UI Effects Core can be used) Default: easeInOutQuint</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.easingout.text2">
+				<source><![CDATA[Easing (type of transition) of the slide-out animation.<br /><strong>You can click here to view all easing types: <a href="http://api.jqueryui.com/easings/" target="_blank">Easings jQuery UI API</a></strong>]]></source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.responsive.label">
+				<source>responsive</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.responsive.text1">
+				<source>on or off. Default: on</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.responsive.text2">
+				<source>If set, the slider will make a responsive width container.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.responsiveunder.label">
+				<source>responsiveUnder</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.responsiveunder.text1">
+				<source>number in pixel. Example: 1170</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.responsiveunder.text2">
+				<source>Slider gets responsive, if the width of the window gets under this value. If you use this, please seaktivate the responsive option!</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.touchnav.label">
+				<source>touchNav</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.touchnav.text1">
+				<source>on or off. Default: on</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.touchnav.text2">
+				<source>Touch-control (on mobile devices)</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.globalbgcolor.label">
+				<source>globalBGColor</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.globalbgcolor.text1">
+				<source>CSS color methods. Default: transparent</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.globalbgcolor.text2">
+				<source>Background color of LayerSlider. You can use all CSS methods, like hexa colors, rgb(r,g,b) method, color names, etc. Note, that background sublayers are covering the background.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.globalbgcolor.label">
+				<source>globalBGImage</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.globalbgcolor.text1">
+				<source>URL of the background image. Default: false</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.optionpanel.tabs.basic.globalbgcolor.text2">
+				<source>Background image of LayerSlider. This will be a fixed background image of LayerSlider by default. Note, that background sublayers are covering the global background image.</source>
+			</trans-unit>
+
+			<trans-unit id="partial.slider.previewpanel.header">
+				<source>Preview Area</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.previewpanel.text1">
+				<source>This is the preview area of your slider. The Black border is not part of this slider, it demonstrates only border of the slider room.</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.previewpanel.previewwidth.text">
+				<source>Set the width of the preview panel to this size:</source>
+			</trans-unit>
+			<trans-unit id="partial.slider.previewpanel.button.update">
+				<source>Update panel size</source>
+			</trans-unit>
+
+
+			<trans-unit id="controller.item.linkfile.image.attached">
+				<source>New image attached to layer (autosave).</source>
+			</trans-unit>
+			<trans-unit id="controller.item.linkfile.image.notattached">
+				<source>Error on select this File. Please try another image.</source>
+			</trans-unit>
+			<trans-unit id="controller.slide.linkfile.image.attached">
+				<source>New image attached to slide (autosave).</source>
+			</trans-unit>
+			<trans-unit id="controller.slide.linkfile.image.notattached">
+				<source>Error on select this File. Please try another image.</source>
+			</trans-unit>
+			<trans-unit id="controller.slider.renderSliderView.notFound">
+				<source>The given Slider was not found</source>
+			</trans-unit>
+			<trans-unit id="controller.slider.create.created">
+				<source>Your new Slider was created.</source>
+			</trans-unit>
+			<trans-unit id="controller.slider.delete.deleted">
+				<source>Your Slider was removed.</source>
+			</trans-unit>
+
+			<trans-unit id="controller.slider.update.updated">
+				<source>Your Slider was updated</source>
+			</trans-unit>
+
+			<trans-unit id="controller.success">
+				<source>Success</source>
+			</trans-unit>
+			<trans-unit id="controller.error">
+				<source>Error</source>
+			</trans-unit>
+
+			<trans-unit id="navbar.toggle">
+				<source>Toggle navigation</source>
+			</trans-unit>
+			<trans-unit id="navbar.button.list">
+				<source>List</source>
+			</trans-unit>
+			<trans-unit id="navbar.button.options">
+				<source>Options</source>
+			</trans-unit>
+			<trans-unit id="navbar.button.save">
+				<source>Save</source>
+			</trans-unit>
+			<trans-unit id="navbar.button.new">
+				<source>New</source>
+			</trans-unit>
+			<trans-unit id="navbar.button.wizard">
+				<source>Wizard</source>
+			</trans-unit>
+			<trans-unit id="navbar.button.migration">
+				<source>JS Migration Assistent</source>
+			</trans-unit>
+
+			<trans-unit id="modal.delete.title">
+				<source>Please confirm</source>
+			</trans-unit>
+			<trans-unit id="modal.delete.body">
+				<source>Are you sure you want to delete "%s"? This action can not be undone.</source>
+			</trans-unit>
+
+			<trans-unit id="modal.nodragable.title">
+				<source>Element positioning deactivated</source>
+			</trans-unit>
+			<trans-unit id="modal.nodragable.body">
+				<source>Place the timeline selector in the light green area to move this element. While the element is in transition, you can't move it!</source>
+			</trans-unit>
+
+			<trans-unit id="modal.buttons.yes">
+				<source>Yes</source>
+			</trans-unit>
+			<trans-unit id="modal.buttons.no">
+				<source>No</source>
+			</trans-unit>
+			<trans-unit id="modal.buttons.ok">
+				<source>OK</source>
+			</trans-unit>
+			<trans-unit id="modal.buttons.close">
+				<source>Close</source>
+			</trans-unit>
+			<trans-unit id="modal.buttons.save">
+				<source>Save</source>
+			</trans-unit>
+
+			<trans-unit id="button.addImages">
+				<source>Select image(s)</source>
+			</trans-unit>
+			<trans-unit id="general.yes">
+				<source>Yes</source>
+			</trans-unit>
+			<trans-unit id="general.no">
+				<source>No</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

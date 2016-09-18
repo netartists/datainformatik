@@ -25,3 +25,4 @@ Implementierung:
 - Frontend Login LESS File angelegt und eingebunden
 - Frontend Login gestyled
 - Responsive Images konfiguriert (data Attribute)
+- layerslider installiert und konfiguriert

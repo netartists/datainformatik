@@ -32,13 +32,21 @@ $(window).scroll(function() {
  * @return void
  */
 var activateNavLayer = function () {
-    // hide all other layers
-    $('.dropdown-menu').hide();
 
-    $this = $(this);
+    // check if desktop view port
+    // check if layer is activated
+    if ($(".navbar-toggle").css("display") != "none") {
+        return true;
+    } else {
 
-    // open current layer
-    $this.siblings('.dropdown-menu').show();
+        // hide all other layers
+        $('.dropdown-menu').hide();
+
+        $this = $(this);
+
+        // open current layer
+        $this.siblings('.dropdown-menu').show();
+    }
 }
 
 /**
