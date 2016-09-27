@@ -246,6 +246,12 @@ return [
             'packagePath' => 'typo3/sysext/viewpage/',
             'suggestions' => [],
         ],
+        'layerslider' => [
+            'composerName' => 'MINNAV/layerslider',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/layerslider/',
+            'suggestions' => [],
+        ],
         'bootstrap_package' => [
             'composerName' => 'bootstrap_package',
             'state' => 'active',
@@ -268,18 +274,6 @@ return [
             'composerName' => 'adx_less',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/adx_less/',
-            'suggestions' => [],
-        ],
-        'layerslider' => [
-            'composerName' => 'MINNAV/layerslider',
-            'state' => 'active',
-            'packagePath' => 'typo3conf/ext/layerslider/',
-            'suggestions' => [],
-        ],
-        'slick' => [
-            'composerName' => 'slick',
-            'state' => 'active',
-            'packagePath' => 'typo3conf/ext/slick/',
             'suggestions' => [],
         ],
         'adodb' => [
@@ -316,12 +310,6 @@ return [
             'composerName' => 'typo3/cms-filemetadata',
             'state' => 'inactive',
             'packagePath' => 'typo3/sysext/filemetadata/',
-            'suggestions' => [],
-        ],
-        'flexslider' => [
-            'composerName' => 'sotastudio/flexslider',
-            'state' => 'inactive',
-            'packagePath' => 'typo3conf/ext/flexslider/',
             'suggestions' => [],
         ],
         'indexed_search_mysql' => [

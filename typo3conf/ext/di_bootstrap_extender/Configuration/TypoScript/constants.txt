@@ -1,3 +1,12 @@
 page.fluidtemplate.layoutRootPath = EXT:di_bootstrap_extender/Resources/Private/Layouts/Page
 page.fluidtemplate.partialRootPath = EXT:di_bootstrap_extender/Resources/Private/Partials/Page
 page.fluidtemplate.templateRootPath = EXT:di_bootstrap_extender/Resources/Private/Templates/Page
+
+plugin.tx_indexedsearch.searchUID = 37
+plugin.tx_indexedsearch.placeholder = Suche ...
+plugin.tx_indexedsearch.button = Los
+
+[globalVar = GP:L = 1]
+plugin.tx_indexedsearch.placeholder = search ...
+plugin.tx_indexedsearch.button = go
+[global]

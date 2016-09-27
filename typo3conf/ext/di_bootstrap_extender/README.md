@@ -26,3 +26,4 @@ Implementierung:
 - Frontend Login gestyled
 - Responsive Images konfiguriert (data Attribute)
 - layerslider installiert und konfiguriert
+- searchbox implementiert

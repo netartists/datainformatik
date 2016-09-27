@@ -61,5 +61,18 @@ var deactivateNavLayer = function() {
     };
 }
 
-$('.container-nav-a-top').mouseover(activateNavLayer);
-$('.container-nav-a-top').parent().mouseout(deactivateNavLayer);
+/**
+ * Closes layer navigation when mouseover a menu without submenu
+ *
+ * @return void
+ */
+var deactivateNavLayerWithoutSub = function() {
+
+    if ($(".dropdown-menu:hover").length <= 0 && $(".dropdown-menu > li:hover").length <= 0) {
+        $('.dropdown-menu').hide();
+    };
+}
+
+$('.dropdown-toggle').mouseover(activateNavLayer);
+$('.dropdown-toggle').parent().mouseout(deactivateNavLayer);
+$('a:not(".dropdown-toggle")').mouseover(deactivateNavLayerWithoutSub);

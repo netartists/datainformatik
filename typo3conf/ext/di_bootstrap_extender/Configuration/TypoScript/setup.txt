@@ -1,3 +1,5 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:di_bootstrap_extender/Configuration/TypoScript/Lib/lib.searchbox.ts">
+
 page.includeCSS {
     1 = EXT:di_bootstrap_extender/Resources/Public/Css/theme.css
     2 = EXT:di_bootstrap_extender/Resources/Public/Less/Theme/theme.less
@@ -10,4 +12,30 @@ page.includeJSFooter {
 # indexed search configuration
 config.index_enable = 1
 config.language = de
-plugin.tx_indexedsearch.show.advancedSearchLink = 0
+
+#default-Konfiguration
+config.sys_language_uid = 1
+config.language = de
+config.locale_all = de_DE
+config.htmlTag_langKey = de
+
+[globalVar = GP:L = 0]
+# Konfiguration wenn &L=0 angegeben
+config.sys_language_uid = 1
+config.language = de
+config.locale_all = de_DE
+config.htmlTag_langKey = de
+[global]
+
+[globalVar = GP:L = 1]
+# Konfiguration wenn &L=1 angegeben
+config.sys_language_uid = 0
+config.language = en
+config.locale_all = en_EN
+config.htmlTag_langKey = en
+[global]
+
+# der Paramter L soll durchgereicht werden
+config.linkVars := addToList(L(0-1))
+# der Paramter soll eindeutig sein (kein doppeltes Auftreten in einer URL)
+config.uniqueLinkVars = 1
