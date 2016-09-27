@@ -27,3 +27,4 @@ Implementierung:
 - Responsive Images konfiguriert (data Attribute)
 - layerslider installiert und konfiguriert
 - searchbox implementiert
+- Mehrsprachigkeit implementiert
