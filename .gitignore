@@ -11,4 +11,4 @@ typo3temp/*
 typo3conf/ext/bootstrap_package_overrides-master/*
 fileadmin/user_upload/*
 /index.php
-vendor/
+vendor/*
