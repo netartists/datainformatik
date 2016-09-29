@@ -5,6 +5,13 @@ Credits
 - René Sonntag
 - info@sonntag.consulting
 
+Installation:
+-------------
+ln -snf typo3_src-7.6.11/typo3 typo3
+ln -snf typo3_src-7.6.11/index.php index.php
+ln -snf typo3_src-7.6.11/vendor vendor
+git clone https://github.com/netartists/datainformatik.git .
+
 Implementierung:
 ----------------
 - TYPO3 Extension di_bootstrap_extender erstellt
