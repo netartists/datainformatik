@@ -10,7 +10,7 @@ if (!$domain) {
 if ($domain == '8-laboratory.de') {
     $GLOBALS['TYPO3_CONF_VARS']['DB']['host'] = '127.0.0.1';
     $GLOBALS['TYPO3_CONF_VARS']['DB']['database'] = 'd02332d9';
-    $GLOBALS['TYPO3_CONF_VARS']['DB']['username'] = 'd02332d9  ';
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['username'] = 'd02332d9';
     $GLOBALS['TYPO3_CONF_VARS']['DB']['password'] = 'DataInf2016';
 	$GLOBALS['TYPO3_CONF_VARS']['DB']['port'] = 3306;
 
