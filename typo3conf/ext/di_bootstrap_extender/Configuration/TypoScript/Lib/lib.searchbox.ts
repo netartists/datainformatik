@@ -13,7 +13,7 @@ lib.searchbox {
         10 = TEXT
         10.data = GPvar : tx_indexedsearch |sword
         10.htmlSpecialChars = 1
-        10.wrap = <input name="tx_indexedsearch_pi2[search][sword]" value="|" class="searchField" placeholder="{$plugin.tx_indexedsearch.placeholder}" type="text" required/>
+        10.wrap = <input id="header-searchboxinput" name="tx_indexedsearch_pi2[search][sword]" value="|" class="searchField" placeholder="{$plugin.tx_indexedsearch.placeholder}" type="text" required/>
     }
 
     30 = TEXT

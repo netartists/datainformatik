@@ -2,13 +2,29 @@
   width: 100%;
 }
 
+.header-right-container-top {
+  @media (min-width: @screen-md) {
+    margin-top: 35px !important;
+  }
+}
+
+#header-right-container {
+  @media (min-width: @screen-md) {
+    margin-top: 0px;
+  }
+}
+
 #header-right {
   float: right;
 }
 
 #header-searchbox {
-  float: right;
+  float: left;
   margin-top: 24px;
+}
+
+#header-searchboxinput {
+  width: 130px;
 }
 
 #header-mainnav, #header-mainnav-second {
