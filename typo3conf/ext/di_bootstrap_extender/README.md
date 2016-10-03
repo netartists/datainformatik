@@ -36,3 +36,4 @@ Implementierung:
 - layerslider installiert und konfiguriert
 - searchbox implementiert
 - Mehrsprachigkeit implementiert
+- Sprechende URLS implementiert (realurl)
