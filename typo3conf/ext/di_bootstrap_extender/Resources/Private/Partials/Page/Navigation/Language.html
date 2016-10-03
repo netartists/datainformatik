@@ -4,11 +4,11 @@
         <f:for each="{languagenavigation}" as="item">
             <li class="{f:if(condition: item.active, then: 'active')} {f:if(condition: item.available, else: 'text-muted')}">
                 <f:switch expression="{item.languageUid}">
-                    <f:case value="4">
+                    <f:case value="5">
                         <bk2k:var name="languageTitle" value="English" />
                         <bk2k:var name="hreflang" value="en-GB" />
                     </f:case>
-                    <f:case default="1">
+                    <f:case default="TRUE">
                         <bk2k:var name="languageTitle" value="Deutsch" />
                         <bk2k:var name="hreflang" value="de-DE" />
                     </f:case>

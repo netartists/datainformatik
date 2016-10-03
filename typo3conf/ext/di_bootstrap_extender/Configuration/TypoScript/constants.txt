@@ -6,7 +6,7 @@ plugin.tx_indexedsearch.searchUID = 37
 plugin.tx_indexedsearch.placeholder = Suche ...
 plugin.tx_indexedsearch.button = Los
 
-[globalVar = GP:L = 1]
+[globalVar = GP:L = 5]
 plugin.tx_indexedsearch.placeholder = search ...
 plugin.tx_indexedsearch.button = go
 [global]

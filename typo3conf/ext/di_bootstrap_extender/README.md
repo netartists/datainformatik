@@ -7,6 +7,7 @@ Credits
 
 Installation:
 -------------
+In DocRoot:
 ln -snf typo3_src-7.6.11/typo3 typo3
 ln -snf typo3_src-7.6.11/index.php index.php
 ln -snf typo3_src-7.6.11/vendor vendor

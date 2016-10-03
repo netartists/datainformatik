@@ -13,32 +13,23 @@ page.includeJSFooter {
 config.index_enable = 1
 
 # Language settings
-page.10.dataProcessing.40.special.value = 1,4
+page.10.dataProcessing.40.special.value = 0,5
 
-# Language default configuration
-config.sys_language_uid = 1
-config.language = de
-config.locale_all = de_DE
-config.htmlTag_langKey = de
+config {
+	linkVars = L(0-5)
+	uniqueLinkVars = 1
+	defaultGetVars.L = 0
+	language = de
+	locale_all = de_DE.UTF-8
+	sys_language_uid = 0
+	htmlTag_langKey = de
+}
 
-# der Paramter L soll durchgereicht werden
-config.linkVars = L
-
-# der Paramter soll eindeutig sein (kein doppeltes Auftreten in einer URL)
-config.uniqueLinkVars = 1
-
-[globalVar = GP:L = 0]
-# Konfiguration wenn &L=0 angegeben
-config.sys_language_uid = 1
-config.language = de
-config.locale_all = de_DE
-config.htmlTag_langKey = de
-[global]
-
-[globalVar = GP:L = 1]
-# Konfiguration wenn &L=1 angegeben
-config.sys_language_uid = 4
-config.language = en
-config.locale_all = en_EN
-config.htmlTag_langKey = en
+[globalVar = GP:L = 5]
+	config {
+		language = en
+		locale_all = en_GB.UTF-8
+		sys_language_uid = 5
+		htmlTag_langKey = en
+	}
 [global]
