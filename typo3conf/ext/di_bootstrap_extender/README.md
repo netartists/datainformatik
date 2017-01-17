@@ -38,3 +38,7 @@ Implementierung:
 - Mehrsprachigkeit implementiert
 - Sprechende URLS implementiert (realurl)
 - Speicher-Buttons komplett eingeblendet (rx_unrollsavebuttons)
+- Suchfeld in Header gestyled
+- Menüstruktur angepasst
+- Redaktionsvorlagen erstellt
+- 404 Handling konfiguriert
