@@ -1,0 +1,24 @@
+{
+	"name": "reelworx/rx-unrollsavebuttons",
+	"description": "Shows the save buttons in TYPO3 BE next to each other instead of listing them in a dropdown menu. Additionally the button labels can be hidden.",
+	"type": "typo3-cms-extension",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "Reelworx GmbH",
+			"role": "Developer",
+			"homepage": "https://reelworx.at/"
+		}
+	],
+	"replace": {
+		"rx_unrollsavebuttons": "self.version"
+	},
+	"require": {
+		"typo3/cms-core": "7.6.2 - 8.2.99"
+	},
+	"autoload": {
+		"psr-4": {
+			"Reelworx\\RxUnrollsavebuttons\\": "Classes/"
+		}
+	}
+}

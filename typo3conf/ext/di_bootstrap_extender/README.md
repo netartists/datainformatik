@@ -37,3 +37,4 @@ Implementierung:
 - searchbox implementiert
 - Mehrsprachigkeit implementiert
 - Sprechende URLS implementiert (realurl)
+- Speicher-Buttons komplett eingeblendet (rx_unrollsavebuttons)

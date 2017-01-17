@@ -288,6 +288,12 @@ return [
             'packagePath' => 'typo3conf/ext/realurl/',
             'suggestions' => [],
         ],
+        'rx_unrollsavebuttons' => [
+            'composerName' => 'reelworx/rx-unrollsavebuttons',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/rx_unrollsavebuttons/',
+            'suggestions' => [],
+        ],
         'adodb' => [
             'composerName' => 'typo3/cms-adodb',
             'state' => 'inactive',

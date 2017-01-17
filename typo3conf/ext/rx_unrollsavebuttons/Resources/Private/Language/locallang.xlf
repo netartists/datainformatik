@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-08-15T11:38:27Z">
+		<header>
+			<description>Language labels for rx_unrollsavebuttons</description>
+			<authorName>Markus Klein</authorName>
+			<authorEmail>support@reelworx.at</authorEmail>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="extConf.iconOnly">
+			<source>Show only icons: If set, the buttons will only show the icon, not the label.</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>
