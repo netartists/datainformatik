@@ -10,3 +10,7 @@ plugin.tx_indexedsearch.button = Los
 plugin.tx_indexedsearch.placeholder = search ...
 plugin.tx_indexedsearch.button = go
 [global]
+
+# page uid of service nav
+di.nav.ServiceNav = 48
+di.nav.DivisionNav = 44

@@ -1,21 +1,32 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:di_bootstrap_extender/Configuration/TypoScript/Lib/lib.searchbox.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:di_bootstrap_extender/Configuration/TypoScript/Lib/lib.navigation.ts">
 
-page.includeCSS {
-    1 = EXT:di_bootstrap_extender/Resources/Public/Css/theme.css
-    2 = EXT:di_bootstrap_extender/Resources/Public/Less/Theme/theme.less
+page {
+
+    includeCSS {
+
+             1 = EXT:di_bootstrap_extender/Resources/Public/Css/theme.css
+             2 = EXT:di_bootstrap_extender/Resources/Public/Less/Theme/theme.less
+    }
+
+    includeJSFooter {
+        1 = EXT:di_bootstrap_extender/Resources/Public/Javascript/theme.js
+    }
+
+    # language settings
+    10.dataProcessing.40.special.value = 0,5
+
+    # discard bottstrap_package menu
+    10.dataProcessing.10 >
+    10.dataProcessing.20 >
+    10.dataProcessing.30 >
 }
-
-page.includeJSFooter {
-    1 = EXT:di_bootstrap_extender/Resources/Public/Javascript/theme.js
-}
-
-# indexed search configuration
-config.index_enable = 1
-
-# Language settings
-page.10.dataProcessing.40.special.value = 0,5
 
 config {
+    # indexed search configuration
+    index_enable = 1
+
+    # language settings
 	linkVars = L(0-5)
 	uniqueLinkVars = 1
 	defaultGetVars.L = 0
