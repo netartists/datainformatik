@@ -20,7 +20,7 @@ plugin.tx_layerslider {
 		# cat=plugin.tx_layerslider/basic/1; type=boolean; label=Include jQuery in Header
 	    includeJquery = 0
 		# cat=plugin.tx_layerslider/basic/2; type=boolean; label=Include jQuery in Footer
-	    includeJqueryFooter = 1
+	    includeJqueryFooter = 0
         # cat=plugin.tx_layerslider/basic/3; type=boolean; label=Include additional css file in backend (preview, positioning stage)
         useAdditionalBackendCSS.useInBE = 1
         # cat=plugin.tx_layerslider/basic/4; type=boolean; label=Include additional css file in frontend (preview, positioning stage)

@@ -125,11 +125,11 @@ nav {
         stdWrap.prepend = HMENU
         stdWrap.prepend {
             entryLevel = 0
-            wrap = <form class="divisionSelectNav" action="#" method="get">|</form>
+            wrap = <form class="mainSelectNav" action="#" method="get">|</form>
 
             1 = TMENU
             1 {
-                wrap = <select id="selectDivision">|</select>
+                wrap = <select id="selectMain">|</select>
 
                 NO = 1
                 NO {
@@ -267,10 +267,10 @@ nav {
         1 = TMENU
         1 {
             noBlur = 1
-            stdWrap.dataWrap = <p class="sr-only">Division navigation</p><ul>|</ul>
+            stdWrap.dataWrap = <p class="sr-only">Division navigation</p><select id="division-select" onchange="location = this.value.trim();">|</select>
 
             NO {
-                wrapItemAndSub = <li>|</li>
+                wrapItemAndSub = <option>|</option>
                 stdWrap.htmlSpecialChars = 1
                 ATagTitle {
                     field = title
@@ -279,7 +279,11 @@ nav {
             }
 
             ACT < .NO
-            ACT.ATagParams = class="active"
+            ACT {
+                stdWrap.cObject.10 {
+                    wrap = <option selected="selected" value="|">
+                }
+            }
             ACT = 1
         }
     }

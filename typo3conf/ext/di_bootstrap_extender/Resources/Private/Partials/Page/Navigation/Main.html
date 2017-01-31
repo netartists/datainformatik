@@ -18,11 +18,10 @@
                 </div>
                 <div id="header-right">
 
-                    <f:cObject typoscriptObjectPath="nav.meta" />
+                    <div id="division-nav"><f:cObject typoscriptObjectPath="nav.division" /></div>
 
-                    <!-- Funktioniert <f:cObject typoscriptObjectPath="nav.main" /> -->
+                    <div id="meta-nav"><f:cObject typoscriptObjectPath="nav.meta" /></div>
 
-                    <!-- Funktioniert <f:cObject typoscriptObjectPath="nav.division" /> -->
                     <!-- Funktioniert <f:cObject typoscriptObjectPath="nav.sub" /> -->
                     <!-- Funktioniert <f:cObject typoscriptObjectPath="nav.service" /> -->
                     <!-- Funktioniert <f:cObject typoscriptObjectPath="nav.breadcrumbs" /> -->
@@ -77,6 +76,7 @@
             </div>
             <span class="navbar-header-border-bottom"></span>
         </div>
+        <div id="main-nav"><f:cObject typoscriptObjectPath="nav.main" /></div>
 
 
     </div>
