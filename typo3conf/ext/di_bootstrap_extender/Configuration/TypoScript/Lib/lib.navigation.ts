@@ -1,7 +1,7 @@
 nav {
     main = HMENU
     main {
-        entryLevel = 0
+        entryLevel = -1
 
         1 = TMENU
         1 {
@@ -368,3 +368,8 @@ nav {
         }
     }
 }
+
+[treeLevel = 0]
+    // do not show navigation on start page
+    nav.main.entryLevel = 1
+[global]
