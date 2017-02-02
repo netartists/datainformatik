@@ -1,7 +1,7 @@
 nav {
     main = HMENU
     main {
-        entryLevel = -1
+        entryLevel = 1
 
         1 = TMENU
         1 {
