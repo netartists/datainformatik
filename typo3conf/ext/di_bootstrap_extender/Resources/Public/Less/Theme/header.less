@@ -50,17 +50,27 @@
 #main-nav {
   clear: both;
   background-color: #c3c3c3;
+  line-height: 48px;
+
+  ul {
+    height: 48px;
+  }
 
   ul li {
     display: inline;
   }
 
   ul li a {
-    padding-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block;
+    height: 100%;
+    float: left;
   }
 
   ul li.first a {
     padding-left: 0;
+    padding-right: 5%;
   }
 }
 
@@ -370,6 +380,7 @@
 
   display: none;
   margin-left: -40px;
+  margin-top: 48px;
 
   @media (min-width: @screen-md-min) {
     display: none;
@@ -378,7 +389,7 @@
     background-color: #fff;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
     border-top: 8px solid @navigation-hover-color-lightblue;
-    padding: 72px 72px 72px 72px;
+    padding: 48px 48px 48px 48px;
     z-index: 1000;
     color: @main-color !important;
 
@@ -407,7 +418,7 @@
 
       line-height: 1.25 !important;
       height: auto !important;
-      padding: 14px 0px 14px 14px !important;
+      padding: 14px 0px 14px 0px !important;
 
       position: relative;
     }
@@ -454,6 +465,10 @@
 
     .subNavList {
       width: 25%;
+
+      li {
+        display: inline-block !important;
+      }
     }
   }
 
@@ -488,7 +503,7 @@
 .navLayer3Level {
 
   @media (min-width: @screen-md-min) {
-    position: absolute;
+    position: absolute !important;
     top: 0;
     left: 100%;
     width: 130% !important;
@@ -499,7 +514,7 @@
     }
 
     li a {
-      margin-left: 40px !important;
+      // margin-left: 40px !important;
     }
 
     li a.active:before {
@@ -628,7 +643,7 @@
   padding-left: 40px;
   font-size: 16px;
   font-weight: bold;
-  padding-bottom: 24px;
+  padding-bottom: 0px;
   text-align: left;
 }
 
