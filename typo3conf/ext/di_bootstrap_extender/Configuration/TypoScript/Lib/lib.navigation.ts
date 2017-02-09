@@ -33,7 +33,7 @@ nav {
 
         2 = TMENU
         2 {
-            stdWrap.dataWrap = <div class="mainNavLayerContainer"><div class="closeLayer"><a href="#" class="closeLayerLink"></a></div><div class="row"><div class="col-md-12"><div class="row"><ul class="col-md-4 subNavList">|</ul></div></div></div></div>
+            stdWrap.dataWrap = <div class="mainNavLayerContainer"><div class="closeLayer"><a href="#" class="closeLayerLink"><span class="glyphicon glyphicon-remove"></span></a></div><div class="row"><div class="col-md-12"><div class="row"><ul class="col-md-4 subNavList">|</ul></div></div></div></div>
 
             expAll = 1
 
@@ -267,10 +267,10 @@ nav {
         1 = TMENU
         1 {
             noBlur = 1
-            stdWrap.dataWrap = <p class="sr-only">Division navigation</p><select id="division-select" onchange="location = this.value.trim();">|</select>
+            stdWrap.dataWrap = <p class="sr-only">Division navigation</p><ul>|</ul>
 
             NO {
-                wrapItemAndSub = <option>|</option>
+                wrapItemAndSub = <li>|</li>
                 stdWrap.htmlSpecialChars = 1
                 ATagTitle {
                     field = title
@@ -279,11 +279,7 @@ nav {
             }
 
             ACT < .NO
-            ACT {
-                stdWrap.cObject.10 {
-                    wrap = <option selected="selected" value="|">
-                }
-            }
+            ACT.ATagParams = class="active"
             ACT = 1
         }
     }

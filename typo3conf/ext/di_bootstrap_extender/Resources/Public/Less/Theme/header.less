@@ -1,3 +1,12 @@
+#container-main-nav {
+  width: 1170px;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: -48px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 #header-container {
   width: 100%;
 }
@@ -49,18 +58,18 @@
 
 #main-nav {
   clear: both;
-  background-color: #c3c3c3;
+  background-color: @main-nav-layer-color;
   line-height: 48px;
 
-  ul {
+  > ul {
     height: 48px;
   }
 
-  ul li {
+  > ul > li {
     display: inline;
   }
 
-  ul li a {
+  > ul > li > a {
     padding-left: 5%;
     padding-right: 5%;
     display: block;
@@ -68,9 +77,13 @@
     float: left;
   }
 
-  ul li.first a {
+  > ul > li.first > a {
     padding-left: 0;
     padding-right: 5%;
+  }
+
+  li {
+    list-style: none;
   }
 }
 
@@ -140,7 +153,7 @@
   }
 
   li {
-    border-bottom: 1px solid @border-color;
+    // border-bottom: 1px solid @main-color;
 
     &.last{
       border-bottom: 0;
@@ -332,7 +345,7 @@
   }
 
   li {
-    border-bottom: 1px solid @border-color;
+    // border-bottom: 1px solid @main-color;
     position: relative;
 
     &:last-child{
@@ -344,7 +357,7 @@
       padding-left: 30px;
 
       &:first-child {
-        border-top: 1px solid @border-color;
+        // border-top: 1px solid @main-color;
       }
 
       a{
@@ -386,9 +399,9 @@
     display: none;
     position: absolute;
     width: 1140px;
-    background-color: #fff;
+    background-color: @main-nav-layer-color;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-    border-top: 8px solid @navigation-hover-color-lightblue;
+    border-top: 8px solid @main-nav-layer-border-top-color;
     padding: 48px 48px 48px 48px;
     z-index: 1000;
     color: @main-color !important;
@@ -407,13 +420,13 @@
     }
 
     li.first > a {
-      border-top: 1px solid @navigation-border !important
+      // border-top: 1px solid @main-color !important
     }
 
     li a {
       color: @main-color !important;
       text-align: left !important;
-      border-bottom: 1px solid @navigation-border !important;
+      // border-bottom: 1px solid @main-color !important;
       font-size: 16px;
 
       line-height: 1.25 !important;
@@ -425,17 +438,6 @@
 
     li a:hover, .activeSub, .hoverSub, .active {
       font-weight: bold !important;
-    }
-
-    li a:hover:before, .activeSub:before, .hoverSub:before, .active:before {
-      content: "" !important;
-      border-width: 0 0 0 3px;
-      border-style: solid;
-      height: 20px !important;
-      margin-right: 10px !important;
-      position: absolute;
-      top: 12px;
-      left: 0;
     }
 
     .activeSub:before, .active:before {
@@ -464,10 +466,10 @@
     }
 
     .subNavList {
-      width: 25%;
+      width: 20%;
 
       li {
-        display: inline-block !important;
+        // display: inline-block !important;
       }
     }
   }
@@ -478,24 +480,13 @@
     right: 72px;
   }
 
-  .closeLayerLink {
-    text-indent: -999em;
-    height: 14px !important;
-    //#sprite > .closeLayer(true);
-
-    &:hover,
-    &:focus {
-      //#sprite > .closeLayerHover(true);
-    }
-  }
-
   .closeLayerLink:after {
     content: "" !important;
-    border-left: 1px solid @navigation-border !important;
+    border-left: 1px solid @main-color !important;
     height: 32px !important;
     margin-right: 10px !important;
     position: absolute;
-    top: -9px;
+    top: 5px;
     left: -25px;
   }
 }
@@ -510,7 +501,7 @@
 
     ul {
       height: 100%;
-      border-left: 1px solid @navigation-border !important;
+      border-left: 1px solid @main-color !important;
     }
 
     li a {
@@ -639,7 +630,7 @@
 }
 
 .nav2LevelTitle {
-  border-left: 1px solid @navigation-border !important;
+  border-left: 1px solid @main-color !important;
   padding-left: 40px;
   font-size: 16px;
   font-weight: bold;
@@ -654,8 +645,8 @@
   position: absolute;
   left: 11px;
   top: 10px;
-  border-right: 10px solid white;
-  border-bottom: 1px solid white;
+  border-right: 10px solid @main-nav-layer-color;
+  border-bottom: 1px solid @main-nav-layer-color;
   transform: rotate(-45deg);
 }
 
@@ -667,8 +658,8 @@
   left: 11px;
   top: 10px;
   border: 0 solid transparent;
-  border-right: 1px solid @navigation-border;
-  border-bottom: 1px solid @navigation-border;
+  border-right: 1px solid @main-color;
+  border-bottom: 1px solid @main-color;
   transform: rotate(-45deg);
 }
 

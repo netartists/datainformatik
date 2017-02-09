@@ -90,6 +90,8 @@ function initializeNavLayer() {
                 var maxHeight = maxHeightSubSub;
             }
 
+            console.log(maxHeight + ', ' + heightSub + ', ' + maxHeightSubSub);
+
             // height of Sub navigation content
             var heightsSubContent = $this.next('.mainNavLayerContainer').find('.nav2LevelCnt').map(function () {
                 $this.next('.mainNavLayerContainer').show()

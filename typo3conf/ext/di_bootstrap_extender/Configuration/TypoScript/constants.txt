@@ -2,6 +2,11 @@ page.fluidtemplate.layoutRootPath = EXT:di_bootstrap_extender/Resources/Private/
 page.fluidtemplate.partialRootPath = EXT:di_bootstrap_extender/Resources/Private/Partials/Page
 page.fluidtemplate.templateRootPath = EXT:di_bootstrap_extender/Resources/Private/Templates/Page
 
+# logo file
+page.logo.file = EXT:di_bootstrap_extender/Resources/Public/Images/data-informatik-logo.png
+
+plugin.tx_felogin_pi1.storagePid = 0
+
 plugin.tx_indexedsearch.searchUID = 37
 plugin.tx_indexedsearch.placeholder = Suche ...
 plugin.tx_indexedsearch.button = Los
