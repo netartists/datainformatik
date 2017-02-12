@@ -1,7 +1,7 @@
 nav {
     main = HMENU
     main {
-        entryLevel = 1
+        entryLevel = 2
 
         1 = TMENU
         1 {
@@ -267,7 +267,7 @@ nav {
         1 = TMENU
         1 {
             noBlur = 1
-            stdWrap.dataWrap = <p class="sr-only">Division navigation</p><ul>|</ul>
+            stdWrap.dataWrap = <p class="sr-only">Division navigation</p><div id="divisionNavActivator">Bereiche</div><div id="divisionDiv"><div id="divisionNavDiv"><ul>|</ul></div></div>
 
             NO {
                 wrapItemAndSub = <li>|</li>

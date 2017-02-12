@@ -240,7 +240,41 @@ function initializeNavLayer() {
         }
     });
 
-    // trigger sub nav layer activation for touch devices
+    // trigger division layer activation
+    $('#divisionNavActivator').on('click', function (e) {
+        'use strict'; // satisfy code inspectors
+
+        if($('#divisionNavDiv').css('display') == 'none')
+        {
+            $('#divisionNavDiv').show();
+        } else {
+            $('#divisionNavDiv').hide();
+        }
+
+        e.preventDefault();
+
+        return false; // extra, and to make sure the function has consistent return points
+    });
+
+    // trigger division layer activation
+    $('#divisionNavActivator').on('touchstart', function (e) {
+        'use strict'; // satisfy code inspectors
+
+        if($('#divisionNavDiv').css('display') == 'none')
+        {
+            $('#divisionDiv').show();
+            $('#divisionNavDiv').show();
+        } else {
+            $('#divisionNavDiv').hide();
+            $('#divisionDiv').hide();
+        }
+
+        e.preventDefault();
+
+        return false; // extra, and to make sure the function has consistent return points
+    });
+
+    // trigger sub nav layer activation
     $('.layerSubNavItem').on('touchstart', function (e) {
         'use strict'; // satisfy code inspectors
         var link = $(this); // preselect the link
